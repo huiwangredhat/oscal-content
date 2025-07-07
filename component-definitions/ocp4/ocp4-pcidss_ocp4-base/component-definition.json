@@ -3,8 +3,8 @@
     "uuid": "aee13aca-d011-4baf-80e3-7b2f3ae277c7",
     "metadata": {
       "title": "Component definition for ocp4",
-      "last-modified": "2025-06-17T11:44:02.676844+08:00",
-      "version": "1.7",
+      "last-modified": "2025-07-07T12:57:14.021353+08:00",
+      "version": "2.1",
       "oscal-version": "1.1.3"
     },
     "components": [
@@ -6767,7 +6767,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "db47822c-ffbd-4e44-b402-ebb09e364adf",
+            "uuid": "54ee6bf3-37e6-4f58-bf59-dcac3d2e56c6",
             "source": "trestle://profiles/ocp4-pcidss_ocp4-base/profile.json",
             "description": "REPLACE_ME",
             "props": [
@@ -6787,7 +6787,7 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "efa34802-b9e4-4567-82a8-8fcecc41252f",
+                "uuid": "0ded527e-6e75-4637-8b9f-3544381f9705",
                 "control-id": "req-1.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -6800,7 +6800,7 @@
                 ]
               },
               {
-                "uuid": "015693e3-76f1-4d82-9420-8693bb05a14a",
+                "uuid": "ec0f8376-bab6-459e-a46f-29f2705b226f",
                 "control-id": "req-1.1.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -6813,7 +6813,7 @@
                 ]
               },
               {
-                "uuid": "593ef798-52a8-4ec0-9bb1-7cf63d874fc0",
+                "uuid": "61e50ecd-b863-460e-9c65-71fd873045b9",
                 "control-id": "req-1.1.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -6826,7 +6826,7 @@
                 ]
               },
               {
-                "uuid": "892ba77c-2918-4d80-9ebd-54256dc091f6",
+                "uuid": "e365ff0a-06c0-41ba-978e-a57823d28766",
                 "control-id": "req-1.1.4",
                 "description": "While there will be a firewall protecting the cluster from outside traffic,\nnetwork connectivity within the cluster is handled by the SDN plugin and\nis configurable via NetworkPolicies [1]. We can ensure that each non-control\nplane namespace has a NetworkPolicy enabled, but it's still the responsibility\nof the system administrator to ensure that the policy is correct.\n\n[1] https://docs.openshift.com/container-platform/latest/networking/network_policy/about-network-policy.html",
                 "props": [
@@ -6853,7 +6853,7 @@
                 ]
               },
               {
-                "uuid": "124228a5-60ef-4ac0-b4bd-e44b3b2b289f",
+                "uuid": "dd229f56-e082-4b7c-b78f-103b2ca03783",
                 "control-id": "req-1.1.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -6866,7 +6866,7 @@
                 ]
               },
               {
-                "uuid": "1450b261-f338-4b08-bc6e-5f3f447f0940",
+                "uuid": "e6aa5c62-efd3-44ad-b740-a24726d85b8b",
                 "control-id": "req-1.1.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -6879,7 +6879,7 @@
                 ]
               },
               {
-                "uuid": "21dff8f9-0a5b-4273-8f79-dc78e322a559",
+                "uuid": "00614e76-f51a-4363-8b36-7b3fd487a613",
                 "control-id": "req-1.1.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -6892,7 +6892,7 @@
                 ]
               },
               {
-                "uuid": "290872f7-dc3c-43a0-b08c-4c23253d30ed",
+                "uuid": "b676acf8-d82f-4345-ad09-d0ef494ffceb",
                 "control-id": "req-1.2.1",
                 "description": "East-West traffic in the cluster can be managed via NetworkPolicies [1]. So,\nwe can verify that each non-control plane namespace has a relevant NetworkPolicy enabled.\nHowever, Egress traffic needs to be taken into account as well, and this setup\nwill vary depending on the SDN plugin used [2][3].\n\n[1] https://docs.openshift.com/container-platform/latest/networking/network_policy/about-network-policy.html\n[2] https://docs.openshift.com/container-platform/latest/networking/openshift_sdn/configuring-egress-firewall.html\n[3] https://docs.openshift.com/container-platform/latest/networking/ovn_kubernetes_network_provider/configuring-egress-firewall-ovn.html",
                 "props": [
@@ -6914,7 +6914,7 @@
                 ]
               },
               {
-                "uuid": "6f01e0f0-67e9-4409-a62a-0b763d371a4c",
+                "uuid": "8c795d57-0a90-499a-a372-d21843df7f66",
                 "control-id": "req-1.2.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -6927,7 +6927,7 @@
                 ]
               },
               {
-                "uuid": "3cf0f5b2-ddd1-4e56-a3a7-f301a68851c9",
+                "uuid": "837d6d5d-2023-480e-9ce5-894c4d26c1dd",
                 "control-id": "req-1.2.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -6940,7 +6940,7 @@
                 ]
               },
               {
-                "uuid": "23b0992e-db10-4886-b890-ac0e0bb1ad7d",
+                "uuid": "e3cfdb16-1f17-4172-a193-79bf4d8816b7",
                 "control-id": "req-1.3.1",
                 "description": "To a limited degree, OpenShift's ingress routing (enabled by default)\nand NetworkPolicies can support restriction of inbound traffic to pods.\nFurther restricting needs to happen on the cloud where OpenShift is deployed\nat, but that's outside of OpenShift's scope.",
                 "props": [
@@ -6962,7 +6962,7 @@
                 ]
               },
               {
-                "uuid": "e0b5db38-83d3-4765-b6a3-4185a4fc1f2d",
+                "uuid": "841b641f-3148-45af-b110-d8798afddb0f",
                 "control-id": "req-1.3.2",
                 "description": "To a limited degree, OpenShift's ingress routing (enabled by default)\nand NetworkPolicies can support restriction of inbound traffic to pods.\nFurther restricting needs to happen on the cloud where OpenShift is deployed\nat, but that's outside of OpenShift's scope.",
                 "props": [
@@ -6984,7 +6984,7 @@
                 ]
               },
               {
-                "uuid": "b137c1c0-aae0-4871-8d4d-6722e910e7ff",
+                "uuid": "38544301-f518-4d84-8108-a15e210d4f09",
                 "control-id": "req-1.3.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -6997,7 +6997,7 @@
                 ]
               },
               {
-                "uuid": "2994d3d6-6498-4ef7-b042-a3b609e6eb6b",
+                "uuid": "a378b2be-ae42-4b4f-833b-0109dac4e809",
                 "control-id": "req-1.3.4",
                 "description": "OpenShift can support authorization of outbound traffic via\negress  policy  objects[1][2].\n\n[1] https://docs.openshift.com/container-platform/latest/networking/openshift_sdn/configuring-egress-firewall.html\n[2] https://docs.openshift.com/container-platform/latest/networking/ovn_kubernetes_network_provider/configuring-egress-firewall-ovn.html",
                 "props": [
@@ -7009,7 +7009,7 @@
                 ]
               },
               {
-                "uuid": "4c498355-df23-42df-b839-23a7181f454e",
+                "uuid": "b4b45667-874f-4e7e-a079-0bf6cc6c9ea0",
                 "control-id": "req-1.3.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7022,7 +7022,7 @@
                 ]
               },
               {
-                "uuid": "b5cdf16f-6756-48c4-9c5e-ad5d7a88e474",
+                "uuid": "8c6bf462-72f0-4833-9984-85df224a4983",
                 "control-id": "req-1.3.6",
                 "description": "Segregation of such system components can take place using the same\nnetwork segregation mechanisms that OpenShift already supports [1][2][3]:\n\n* Ingress\n* NetworkPolicies\n* Egress Policies\n\nSpecial attention needs to be taken to audit that these components\nare appropriately segregated by the aforementioned mechanisms\n\n[1] https://docs.openshift.com/container-platform/latest/networking/network_policy/about-network-policy.html\n[2] https://docs.openshift.com/container-platform/latest/networking/openshift_sdn/configuring-egress-firewall.html\n[3] https://docs.openshift.com/container-platform/latest/networking/ovn_kubernetes_network_provider/configuring-egress-firewall-ovn.html",
                 "props": [
@@ -7044,7 +7044,7 @@
                 ]
               },
               {
-                "uuid": "2de28d25-4ed4-4eb9-8948-d42e1010ce04",
+                "uuid": "0e90305c-dfc1-4bf1-8cf1-d515b04b70c2",
                 "control-id": "req-1.3.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7057,7 +7057,7 @@
                 ]
               },
               {
-                "uuid": "c74aedd2-4315-4edb-ba2f-7f4785c29173",
+                "uuid": "c0825271-c4d1-44c8-af8c-822662efcb03",
                 "control-id": "req-1.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7070,7 +7070,7 @@
                 ]
               },
               {
-                "uuid": "1cbc713f-b73a-4582-954b-535379c66485",
+                "uuid": "3810ff29-5b40-4741-85da-6c2b29ab88f5",
                 "control-id": "req-1.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7083,7 +7083,7 @@
                 ]
               },
               {
-                "uuid": "8ecda916-4cf5-41fe-a235-76d083d8793d",
+                "uuid": "61177199-e5e4-4700-a592-c7c6556b5bd9",
                 "control-id": "req-2.1",
                 "description": "The Openshift Platform doesn't come with any hardcoded credentials or passwords.\nAuthenticators are uniquely created at deployment-time, including credentials\nfor an admin user (called `kubeadmin`) which is meant for bootstrapping purposes.\n\nIt is recommended for deployers to delete this account in favor of using an IdP\nand setting up appropriate permissions via RBAC roles.",
                 "props": [
@@ -7100,7 +7100,7 @@
                 ]
               },
               {
-                "uuid": "0ec5180d-9a28-4b77-9f44-c36a8241b898",
+                "uuid": "72fa0b5e-0dfb-4346-a0c9-a3cbb795c684",
                 "control-id": "req-2.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7113,7 +7113,7 @@
                 ]
               },
               {
-                "uuid": "2b939569-55e5-464e-b32a-05df66bd04dd",
+                "uuid": "f8215409-f909-45fa-9034-13f6e04e56b3",
                 "control-id": "req-2.2.1",
                 "description": "OpenShift nodes run RHEL CoreOS by default, which contains only the\nnecessary services, protocols and daemons needed to run OpenShift and\ncontainers. OpenShift provides the means to separate application\nworkloads within the cluster onto separate hosts and containers. It\nis the responsibility of the organization to appropriately separate\ntheir applications into relevant containers to meet this control.",
                 "props": [
@@ -7125,7 +7125,7 @@
                 ]
               },
               {
-                "uuid": "54a37c24-f5a1-4dbd-8579-4fdf654747bc",
+                "uuid": "2a1c7da7-a3f1-43cc-8755-6124d0fd950f",
                 "control-id": "req-2.2.2",
                 "description": "RHEL CoreOS runs only the necessary services, protocols and daemons required\nfor the functionality of OpenShift itself.",
                 "props": [
@@ -7137,7 +7137,7 @@
                 ]
               },
               {
-                "uuid": "e4499414-4d37-4cef-8751-2d74b920cc4c",
+                "uuid": "00048e00-53c9-4ac2-8831-d2a66dc7b431",
                 "control-id": "req-2.2.3",
                 "description": "OpenShift does not require any insecure services, protocols or daemons for\nproper functioning. The deployment comes with TLS enabled by default with\nstrong ciphers and an appropriate version enabled.",
                 "props": [
@@ -7254,7 +7254,7 @@
                 ]
               },
               {
-                "uuid": "9e120997-9f94-42e7-ba8f-0019e0e45640",
+                "uuid": "c31a4d79-decc-4760-b2ab-e407b92d8559",
                 "control-id": "req-2.2.4",
                 "description": "While it's possible to manually configure the security settings\nin the Openshift Container Platform, the Compliance Operator provides\nan automated way of checking for a secure configuration and automatically\nremediating issues according to known security standards. It's usage\nis recommended to ensure appropriate configuration is set and prevent\ndrift.",
                 "props": [
@@ -7271,7 +7271,7 @@
                 ]
               },
               {
-                "uuid": "f5e90255-ed91-43af-8a05-5a77a1255b85",
+                "uuid": "4db64c5b-aeec-41af-a547-be6c45e8eef8",
                 "control-id": "req-2.2.5",
                 "description": "The OpenShift Container Platform uses RHEL CoreOS by default. In itself, it's\na minimal operating system with the sole purpose of running OpenShift. Therefore\nit doesn't contain extra packages or functionality; only the minimal that's meant\nto run OpenShift. RHCOS is the recommended operating system for OpenShift.",
                 "props": [
@@ -7283,7 +7283,7 @@
                 ]
               },
               {
-                "uuid": "f9bd9296-8ea8-476c-aa33-e2d01612597e",
+                "uuid": "d9156949-baf2-400b-bc00-71dde21d691b",
                 "control-id": "req-2.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7410,7 +7410,7 @@
                 ]
               },
               {
-                "uuid": "3276cf3b-ebc1-4f51-b28c-a98da010ea7a",
+                "uuid": "d11f8c8b-7cf2-4469-b2b9-59ca69df58be",
                 "control-id": "req-2.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7423,7 +7423,7 @@
                 ]
               },
               {
-                "uuid": "80d4fb1c-4a07-48e9-9b34-f4bf9d7acaf0",
+                "uuid": "38ddca58-8c92-4256-868e-0b049eafe072",
                 "control-id": "req-2.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7436,7 +7436,7 @@
                 ]
               },
               {
-                "uuid": "a54ca474-455f-4ef9-8203-cac09e74b3bf",
+                "uuid": "c977869f-9d30-4afb-a82a-9f5fb5d81884",
                 "control-id": "req-3.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7449,7 +7449,7 @@
                 ]
               },
               {
-                "uuid": "ccf00338-dbf2-406c-a726-d57a19274ef4",
+                "uuid": "b9492b69-b0e9-4b04-8a2e-537880c9c4a0",
                 "control-id": "req-3.2.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7462,7 +7462,7 @@
                 ]
               },
               {
-                "uuid": "7a438982-e1e7-4c03-9fe0-47dab47aafd4",
+                "uuid": "f7a56d25-ff1d-4a9d-8a4b-abbd537cbe68",
                 "control-id": "req-3.2.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7475,7 +7475,7 @@
                 ]
               },
               {
-                "uuid": "8b7a066a-1845-4aa6-9364-e8cef27e65e5",
+                "uuid": "249b79c1-4f79-4291-ba5d-8e574dbac2a9",
                 "control-id": "req-3.2.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7488,7 +7488,7 @@
                 ]
               },
               {
-                "uuid": "5d28e26d-2643-442d-b94c-3a2b4d33a6b7",
+                "uuid": "f406d7d9-e67b-4c80-a1a8-9864773d41b8",
                 "control-id": "req-3.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7501,7 +7501,7 @@
                 ]
               },
               {
-                "uuid": "d2cc0e8d-2f98-4922-9c92-cf6ead666447",
+                "uuid": "7d31a364-ed69-4754-81ae-afaaff8e2d27",
                 "control-id": "req-3.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7514,7 +7514,7 @@
                 ]
               },
               {
-                "uuid": "38bbefb1-1bbf-4fe1-a094-230c4fc888ca",
+                "uuid": "e6d87a79-bd95-496b-abe5-52fcdb314ada",
                 "control-id": "req-3.4.1",
                 "description": "In case where card holder data may be stored on worker nodes disks, OpenShift Container Platform can help to partially\ncomply with this requirement by providing several means of fully encrypting disks.\n* Using RHEL core crypto components which are FIPS certified\n* Or using cloud provider techniques, such as EBS encryption for AWS case.\nFor this requirement, we also check etcd is encrypted, so that secrets, but also routes and oauth configurations are secured.\n\nConcerning Full Disk Encryption:\nFull Disk Encryption can be enabled on OpenShift by installing the cluster with FIPS mode enabled.\nOpenShift Container Platform uses certain FIPS Validated / Modules in Process modules within RHEL and RHCOS\nfor the operating system components that it uses.\nSee RHEL7 core crypto components and https://docs.openshift.com/container-platform/4.9/installing/installing-fips.html for further information.\nWhen installing the cluster, The public ssh key is passed to the Red Hat Enterprise Linux CoreOS (RHCOS) nodes through their Ignition config\nfiles and is used to authenticate SSH access to the nodes. The key is added to the ~/.ssh/authorized_keys list for the core user\non each node, which enables password-less authentication.\nThe management of the private key is up to the customer.\nLUKS/dm-crypt (used by the FIPS mode) provides full-disk encryption that fulfills Req-3.4.1.\nAccess to the stored data is only possible via a decryption password that must be entered when the disk is mounted (must be somehow\nrelated to the ssh keypair?...).\nThe decryption password is stored using TPM v2, in a secure cryptoprocessor contained within a server.\nWhen enabling FIPS mode, machine configs state that encryption using TPM based pinning in clevis is requested for these nodes.",
                 "props": [
@@ -7541,7 +7541,7 @@
                 ]
               },
               {
-                "uuid": "1c8c6a63-e5ac-4fcf-ad1d-5199d1123f03",
+                "uuid": "924569df-cabe-45dd-99f7-cd2e00158385",
                 "control-id": "req-3.5.1",
                 "description": "This requirement largely depends on the solution chosen by the customer to protect card holder data at rest.\n* When Full Disk Encryption is done using AWS EBS encryption, the algorithm used is AES-256.\n  Your data key is stored on disk with your encrypted data, but not before EBS encrypts it with your KMS key.\n  Your data key never appears on disk in plaintext.\n  The same data key is shared by snapshots of the volume and any subsequent volumes created from those snapshots.\n  See https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html\n* When Full Disk Encryption is done using LUKS with TPM2,full disk encryption utilities such as dm-crypt and\n  BitLocker encrypt disks with a TPM bind key, and then store the TPM bind key in the TPM (Trusted Platform Module),\n  which is a secure element attached to the motherboard of the node.\n  The main benefit of this method is that there is no external dependency, and the node is able to decrypt its own\n  disks at boot time without any external interaction.\n* When Full Disk Encryption is done using LUKS with Tang, the booting node attempts to contact a predefined set\n  of Tang servers by performing a cryptographic handshake. If it can reach the required number of Tang servers,\n  the node can construct its disk decryption key and unlock the disks to continue booting.\nSee https://docs.openshift.com/container-platform/4.9/security/network_bound_disk_encryption/nbde-about-disk-encryption-technology.html",
                 "props": [
@@ -7553,7 +7553,7 @@
                 ]
               },
               {
-                "uuid": "eac15eb8-7ad8-4653-bc56-58a8f011b400",
+                "uuid": "43cd071f-69ac-45ac-b3f9-be044aa29517",
                 "control-id": "req-3.5.2",
                 "description": "This requirement largely depends on the solution chosen by the customer to protect card holder data at rest.\n* When Full Disk Encryption is done using AWS EBS encryption, the data key, used for volume encryption, is generated\n  by AWS KMS, encrypted with the Key Encryption Key that lies in the KMS and stored with the volume metadata, by EBS.\n  It is the payment entity's responsibility to limit the access to this key by ensuring that Grant requests to decrypt\n  the data key using the KEK (Key Encryption Key) is given only to the need to know users or AWS resources.\n  See https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html\n* When Full Disk Encryption is done using LUKS with TPM2, the TPM bind key, which is used to decrypt the data key is\n  stored in the TPM (Trusted Platform Module), on the motherboard of the node.\n  It is therefore not shared with anyone.\n* When Full Disk Encryption is done using LUKS with Tang, Tang server does not store the encryption key directly,\n  and never interacts with it. The metadata needed to decrypt the volume is stored on the disk but can only be\n  unlocked and used when the node can correctly establish the handshake with the Tang server.\n  The data key is therefore not shared with anyone.",
                 "props": [
@@ -7565,7 +7565,7 @@
                 ]
               },
               {
-                "uuid": "02a347df-b486-461b-b190-a6979124ae22",
+                "uuid": "55249e55-94c5-4a16-8523-5c12067a308f",
                 "control-id": "req-3.5.3",
                 "description": "This requirement depends on the solution chosen by the customer to protect card holder data at rest:\n* When Full Disk Encryption is done using AWS EBS encryption, the data key is encrypted with a  Key Encryption Key\n  that is stored in the AWS KMS, separately from the data key.\n* When Full Disk Encryption is done using LUKS with TPM2, the TPM bind key, which is used to decrypt the data key is\n  stored in the TPM (Trusted Platform Module), on the motherboard of the node.\n* When Full Disk Encryption is done using LUKS with Tang, the encryption key is not stored to disk. Only the provisioning\n  metadata is. A POST to the Tang server would allow the node to recompute the encryption key from this metadata.\n  See https://github.com/latchset/tang",
                 "props": [
@@ -7577,7 +7577,7 @@
                 ]
               },
               {
-                "uuid": "2081450c-8731-4fd3-8b26-5421fc471af3",
+                "uuid": "7e7f6747-abb2-458a-bd03-ab090dd9e9ac",
                 "control-id": "req-3.5.4",
                 "description": "This requirement depends on the solution chosen by the customer to protect card holder data at rest:\n* When Full Disk Encryption is done using AWS EBS encryption, the data key is stored in the volume's metadata only.\n  The KEK is stored in the AWS KMS only.\n* When Full Disk Encryption is done using LUKS with TPM2, the TPM bind key is stored in the TPM (Trusted Platform Module) only.\n  The encrypted data key is stored on the MBR of the disk only.\n* When Full Disk Encryption is done using LUKS with Tang, the encryption key is not stored to disk. Only the provisioning\n  metadata is. A POST to the Tang server would allow the node to recompute the encryption key from this metadata.\n  See https://github.com/latchset/tang",
                 "props": [
@@ -7589,7 +7589,7 @@
                 ]
               },
               {
-                "uuid": "fc221604-51cd-4559-89fc-dc6fd3d2ad7e",
+                "uuid": "63f749a6-fe68-4893-96f2-f8e8952b15e1",
                 "control-id": "req-3.6.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7601,7 +7601,7 @@
                 ]
               },
               {
-                "uuid": "dd2278b9-e632-4bfc-809e-262e9862f5aa",
+                "uuid": "179d8502-d8c2-43c8-9f7e-1f63104005cd",
                 "control-id": "req-3.6.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7614,7 +7614,7 @@
                 ]
               },
               {
-                "uuid": "23da6c0e-01a9-41b2-9ccd-9f2761df32ea",
+                "uuid": "559a0ac6-28d5-4285-b0fb-78db365a4726",
                 "control-id": "req-3.6.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7627,7 +7627,7 @@
                 ]
               },
               {
-                "uuid": "6e1ca7a4-891e-409d-a2fc-1f175e8d148e",
+                "uuid": "cf75e68a-f9b5-4dcf-ad64-6ce46678320d",
                 "control-id": "req-3.6.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7640,7 +7640,7 @@
                 ]
               },
               {
-                "uuid": "4347e8bf-81df-49e2-b0f7-1175a08f7984",
+                "uuid": "654f08f9-8c9d-479e-86c3-f26c5d4fb5c1",
                 "control-id": "req-3.6.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7653,7 +7653,7 @@
                 ]
               },
               {
-                "uuid": "a899529b-b93a-47c2-a8e2-7b3c6efc3fae",
+                "uuid": "1877ded9-99bc-4e0b-b13b-f4088b9e012d",
                 "control-id": "req-3.6.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7666,7 +7666,7 @@
                 ]
               },
               {
-                "uuid": "5abef926-e9ee-4669-a1ea-9b93afdddd6e",
+                "uuid": "fecd80e1-7af5-4a2a-bfbb-cd0b36f2368b",
                 "control-id": "req-3.6.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7679,7 +7679,7 @@
                 ]
               },
               {
-                "uuid": "97f6d80b-90c5-4982-af94-3835b03c4528",
+                "uuid": "6f8cb96c-ab83-4bb5-8263-35aa5ec92b6f",
                 "control-id": "req-3.6.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7692,7 +7692,7 @@
                 ]
               },
               {
-                "uuid": "65264c9f-fc8f-46b0-9d9f-25ac63615f52",
+                "uuid": "08d734db-66fe-4d5e-a560-9abdd053b572",
                 "control-id": "req-3.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7705,7 +7705,7 @@
                 ]
               },
               {
-                "uuid": "3f61147d-c15d-4066-8bf9-b828ac2f5150",
+                "uuid": "3ff7b48e-e1c2-48f8-8ab4-5a1954ac4ed3",
                 "control-id": "req-4.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7742,7 +7742,7 @@
                 ]
               },
               {
-                "uuid": "cd15f12d-20aa-4346-900b-8a0df20a167a",
+                "uuid": "0d8b4103-b612-4b2f-9d66-36805a545b9b",
                 "control-id": "req-4.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7755,7 +7755,7 @@
                 ]
               },
               {
-                "uuid": "366afc2b-15bb-41f0-bc8a-be5fe13ee0b1",
+                "uuid": "29a89ab1-0e46-431a-aa46-73f73dac9be0",
                 "control-id": "req-4.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7768,7 +7768,7 @@
                 ]
               },
               {
-                "uuid": "641420f9-0b13-4883-96ed-b4f72437370f",
+                "uuid": "c3e770c4-8dd5-4745-af6f-45cf5a8bfb5a",
                 "control-id": "req-4.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7781,7 +7781,7 @@
                 ]
               },
               {
-                "uuid": "d483146f-2430-4719-b602-1f47cb02decd",
+                "uuid": "0b7c6a48-9b73-436a-9159-8bf67490bb89",
                 "control-id": "req-5.1.1",
                 "description": "OpenShift container platforms may install the OpenShift File\nIntegrity Operator [1] which monitors file system integrity on the host.\nThis may allow for the detection of threats on the hosts which attempt\nto modify the file system in malicious ways. Additionally, there exist\nseveral solutions to scan for container vulnerabilities which are indispensible\nfrom any deployment. One such example is Red Hat Quay [2] which supports\nimage verification and continuous security scanning of container images.\n\n[1] https://docs.openshift.com/container-platform/latest/security/file_integrity_operator/file-integrity-operator-understanding.html\n[2] https://docs.openshift.com/container-platform/latest/security/container_security/security-registries.html",
                 "props": [
@@ -7798,7 +7798,7 @@
                 ]
               },
               {
-                "uuid": "323d2cfe-d309-4b0b-9a8c-af0239eeee67",
+                "uuid": "0b80c7d9-d6d6-4bd7-8218-0e7d1a7a3bf8",
                 "control-id": "req-5.1.2",
                 "description": "Red Hat Product Security constantly tracks threats to the OpenShift Container\nPlatform to ensure they are addressed. Besides this they also perform\nvulnerability assessments on the platform which aid in keeping up\nwith the constantly evolving threat landscape.",
                 "props": [
@@ -7810,7 +7810,7 @@
                 ]
               },
               {
-                "uuid": "2e6fcf1d-1999-4be2-9d2d-76563c141393",
+                "uuid": "1a3ad44e-e973-41d2-b40c-6a548b347b70",
                 "control-id": "req-5.2",
                 "description": "OpenShift container platforms may install the OpenShift File\nIntegrity Operator [1] which monitors file system integrity on the host.\nThis may allow for the detection of threats on the hosts which attempt\nto modify the file system in malicious ways. Additionally, there exist\nseveral solutions to scan for container vulnerabilities which are indispensible\nfrom any deployment. One such example is Red Hat Quay [2] which supports\nimage verification and continuous security scanning of container images.\n\n[1] https://docs.openshift.com/container-platform/latest/security/file_integrity_operator/file-integrity-operator-understanding.html\n[2] https://docs.openshift.com/container-platform/latest/security/container_security/security-registries.html",
                 "props": [
@@ -7827,7 +7827,7 @@
                 ]
               },
               {
-                "uuid": "ec9e1c13-741c-4f3b-920e-29b07d95ce7b",
+                "uuid": "70e0c6f9-5f83-461c-b3da-ae3ca4664f96",
                 "control-id": "req-5.3",
                 "description": "The OpenShift File Integrity Operator runs on a namespace prepended with\nthe `openshift-` prefix. Such namespaces are only accessible by system\nadministrators. Users require explicit roles to access the namespace. On\nthe other hand, given the usage of Custom Resource Definitions, users also\nrequire explicit roles and permissions to access and modify the scan settings\nof the operator.\n\nImage registries such as Red Hat Quay also require special privileges in\norder to modify and access them. Security scanning of images may not be\nturned off.",
                 "props": [
@@ -7844,7 +7844,7 @@
                 ]
               },
               {
-                "uuid": "46b0d7b7-c3a0-4cdf-9787-7868290f4f43",
+                "uuid": "34c8b124-fbfc-44c1-bbcc-54cbb6a1c25e",
                 "control-id": "req-5.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7857,7 +7857,7 @@
                 ]
               },
               {
-                "uuid": "75e8e79b-292f-4b6c-9894-5d42a5dc8255",
+                "uuid": "72f602ea-e562-49a5-994c-6a5149dd01dc",
                 "control-id": "req-6.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7870,7 +7870,7 @@
                 ]
               },
               {
-                "uuid": "39e50be9-7723-4975-9197-ff3ba4846fa3",
+                "uuid": "974e5777-ec0d-4289-828c-f5cb0726f87b",
                 "control-id": "req-6.2",
                 "description": "The OpenShift Container Platform provides the capability of updating\nboth the Kubernetes/OCP layer, as well as the Operating System (Red Hat\nCoreOS) layer in an ubiquitous manner with over-the-air updates using\nthe OpenShift Update Service (OSUS) [1]. This service can also be installed\nin clusters without internet connectivity [2].\n\n[1] https://docs.openshift.com/container-platform/latest/updating/understanding-the-update-service.html\n[2] https://docs.openshift.com/container-platform/latest/updating/installing-update-service.html",
                 "props": [
@@ -7882,7 +7882,7 @@
                 ]
               },
               {
-                "uuid": "96ca66d1-e3cd-48ae-b2a1-8b559f45f384",
+                "uuid": "46fb9491-24ec-40be-8e60-91a0f0d1170b",
                 "control-id": "req-6.3.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7895,7 +7895,7 @@
                 ]
               },
               {
-                "uuid": "9958794c-ec58-44ef-b0d4-48b4c3c0dc07",
+                "uuid": "7b996029-e000-4bc2-b782-8542431d6e1a",
                 "control-id": "req-6.3.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7908,7 +7908,7 @@
                 ]
               },
               {
-                "uuid": "b82c5018-3076-4cc8-a8f4-3370f13117da",
+                "uuid": "20cbaf5c-788f-4ce6-bbf0-38c1ad5038d1",
                 "control-id": "req-6.4.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7921,7 +7921,7 @@
                 ]
               },
               {
-                "uuid": "89f27354-0bda-4bea-9196-cd2ddd758da6",
+                "uuid": "894b04b4-e69a-439d-a870-7614cb38658a",
                 "control-id": "req-6.4.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7934,7 +7934,7 @@
                 ]
               },
               {
-                "uuid": "1b81d918-2f3c-4dff-b1ba-5b78cf2e7985",
+                "uuid": "85c65037-3515-411f-a6e1-54bcda055388",
                 "control-id": "req-6.4.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7947,7 +7947,7 @@
                 ]
               },
               {
-                "uuid": "eb5c9960-e1d7-431a-aae6-4b3434dc944f",
+                "uuid": "7bf210cf-d20a-44f9-b13d-4389759ff267",
                 "control-id": "req-6.4.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7960,7 +7960,7 @@
                 ]
               },
               {
-                "uuid": "140ea229-7aeb-47b6-a596-fda46dd3ab13",
+                "uuid": "422267a8-fa1f-45e4-b8db-cd8b353c7e35",
                 "control-id": "req-6.4.5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7973,7 +7973,7 @@
                 ]
               },
               {
-                "uuid": "2abc46aa-8fd7-4cb5-bcdb-21c1386be33e",
+                "uuid": "cfb2542b-5fc4-44b7-b882-2b72386d22e1",
                 "control-id": "req-6.4.5.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7986,7 +7986,7 @@
                 ]
               },
               {
-                "uuid": "7943476c-9b71-4b6f-9285-3e232b021b10",
+                "uuid": "2cdc4ada-4b71-462c-ace0-35571ae3e5e3",
                 "control-id": "req-6.4.5.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -7999,7 +7999,7 @@
                 ]
               },
               {
-                "uuid": "95a322b5-c9c6-4085-b7c7-1f46c20c507f",
+                "uuid": "969296a2-96cd-475b-99c4-29170c5c5100",
                 "control-id": "req-6.4.5.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8012,7 +8012,7 @@
                 ]
               },
               {
-                "uuid": "9790db8e-17f1-4494-8fc9-45b988193747",
+                "uuid": "1302839d-17a2-45af-b1ed-5255e24d4a01",
                 "control-id": "req-6.4.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8025,7 +8025,7 @@
                 ]
               },
               {
-                "uuid": "c555143b-6118-432b-b9e7-36f7fcd61498",
+                "uuid": "b07c4ace-0bb3-47fe-b4d8-ce9bd974a62c",
                 "control-id": "req-6.5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8038,7 +8038,7 @@
                 ]
               },
               {
-                "uuid": "9e571534-219c-4996-a15a-6e76d53356c5",
+                "uuid": "4dbcfb8e-20bc-4380-82f9-b04ed1d61d71",
                 "control-id": "req-6.5.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8051,7 +8051,7 @@
                 ]
               },
               {
-                "uuid": "4abd8fdb-d429-427e-80ab-9e9ec09f64b8",
+                "uuid": "fe77d00b-bc2c-4681-a4e8-cbf6707d4a3c",
                 "control-id": "req-6.5.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8064,7 +8064,7 @@
                 ]
               },
               {
-                "uuid": "1d4ac680-7919-4a2e-b4fc-482cd8676c95",
+                "uuid": "11dec8c7-42f9-4700-8fe2-c1eb48d20cbd",
                 "control-id": "req-6.5.4",
                 "description": "This is an organizational control, and thus it's in the payment\nentity's responsibility to follow best secure development practices\nwhen developing applications on top of the OpenShift Container Platform.\n\nHowever, OpenShift does provide tools that can help ensure that\nsecure communications are in place. e.g. OpenShift Routes\ncan easily enforce TLS is enabled for that specific endpoint.",
                 "props": [
@@ -8081,7 +8081,7 @@
                 ]
               },
               {
-                "uuid": "9b6becf2-0e90-47dd-bece-0c6266411603",
+                "uuid": "b1f52fbf-f430-4b69-ace8-55770c89dcb5",
                 "control-id": "req-6.5.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8094,7 +8094,7 @@
                 ]
               },
               {
-                "uuid": "32db00c1-84e9-4360-95a1-66d5a24d5be7",
+                "uuid": "ba4ec3c4-1de4-4160-9646-8b40ab85c8e7",
                 "control-id": "req-6.5.6",
                 "description": "Red Hat Product Security publishes a list of known vulnerabilities that\nallow organizations to measure their security posture and evaluate if\ntheir platform and base images are appropriately patched.",
                 "props": [
@@ -8106,7 +8106,7 @@
                 ]
               },
               {
-                "uuid": "0bfb3bb0-0e6e-4c40-b699-7ca5fb81f23e",
+                "uuid": "24fc7c60-10ed-4ebc-b581-6a4f2f23a460",
                 "control-id": "req-6.5.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8119,7 +8119,7 @@
                 ]
               },
               {
-                "uuid": "b8812039-419d-41b0-a334-05649b0885ce",
+                "uuid": "93b0dfc3-4e07-4698-a9f5-52aeabfee3eb",
                 "control-id": "req-6.5.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8132,7 +8132,7 @@
                 ]
               },
               {
-                "uuid": "a705e8e3-52ca-46b2-908f-a78319972373",
+                "uuid": "7ccb4ad3-6944-4cc5-b14d-a05a6380c9c8",
                 "control-id": "req-6.5.9",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8145,7 +8145,7 @@
                 ]
               },
               {
-                "uuid": "f0186304-c5b3-46d4-8894-d661a1b3a5f3",
+                "uuid": "95b312ca-bc65-4756-af52-aca65af2eef2",
                 "control-id": "req-6.5.10",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8158,7 +8158,7 @@
                 ]
               },
               {
-                "uuid": "79b24884-220d-4cb8-ad12-9762bb1cfacd",
+                "uuid": "4761a423-9096-426f-9359-6168b6b811ea",
                 "control-id": "req-6.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8171,7 +8171,7 @@
                 ]
               },
               {
-                "uuid": "5ee82470-b71c-489d-8c82-053f6f2ca6bb",
+                "uuid": "958d9222-dddf-4e44-aa63-37a5d8db5420",
                 "control-id": "req-6.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8184,7 +8184,7 @@
                 ]
               },
               {
-                "uuid": "a431e673-698e-41c6-b034-4854b1efc59d",
+                "uuid": "67616894-270c-43ad-bb42-05eb29fc01c8",
                 "control-id": "req-7.1.1",
                 "description": "The OpenShift Container Platform comes with the Kubernetes RBAC\nfeature enabled by default. This feature ensures that only if a\nuser or a system account has the appropriate permission, it's able\nto operate on specific system objects. By reviewing the existing\nRole and ClusterRole objects, one is able to see the resources\nthat are accessible for a certain role, as well as the \"verbs\" or\noperations that the role can execute on that resource.",
                 "props": [
@@ -8206,7 +8206,7 @@
                 ]
               },
               {
-                "uuid": "ec19f884-9a24-4a31-a35a-1c1e668bbc35",
+                "uuid": "c1337a55-f970-471e-adc3-352a358ec33b",
                 "control-id": "req-7.1.2",
                 "description": "The OpenShift Container Platform contains a ClusterRole called `cluster-admin`\nthis role is allowed to do anything in the system. It is recommended to monitor\nthe usage of this ClusterRole to prevent misuse.",
                 "props": [
@@ -8223,7 +8223,7 @@
                 ]
               },
               {
-                "uuid": "403c7b1b-5fde-43c1-80c1-305271e57b59",
+                "uuid": "fa93d82c-eef8-46ea-aba8-bfc74e0b4b60",
                 "control-id": "req-7.1.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8236,7 +8236,7 @@
                 ]
               },
               {
-                "uuid": "f72bf4d9-6af5-4388-a54e-a66c5794342e",
+                "uuid": "02190c26-936f-487b-b51b-e67a9d27e611",
                 "control-id": "req-7.1.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8249,7 +8249,7 @@
                 ]
               },
               {
-                "uuid": "01dacaa8-64dd-465d-a0b2-4f0353f6e8b3",
+                "uuid": "2df2ba77-329d-40fe-8e78-b7886469fe92",
                 "control-id": "req-7.2.1",
                 "description": "The OpenShift Container Platform has RBAC enabled by default. With this\nfeature, any requests to the API is denied unless an explicit\nRole or ClusterRule is bound to the entity making the request.\n\nAll objects in Kubernetes/OpenShift are bound to RBAC permissions.",
                 "props": [
@@ -8261,7 +8261,7 @@
                 ]
               },
               {
-                "uuid": "24f063bf-d33c-4562-879a-6126447b68f1",
+                "uuid": "a63db87d-dde6-47cb-a343-4ff0d11e4a8f",
                 "control-id": "req-7.2.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8274,7 +8274,7 @@
                 ]
               },
               {
-                "uuid": "3c1f9abe-95d3-412c-a701-0d0e2f1b3d5a",
+                "uuid": "97ad4db8-9ff2-406b-9a4f-0a20e92617da",
                 "control-id": "req-7.2.3",
                 "description": "The OpenShift Container Platform has RBAC enabled by default. With this\nfeature, any requests to the API is denied unless an explicit\nRole or ClusterRule is bound to the entity making the request.",
                 "props": [
@@ -8286,7 +8286,7 @@
                 ]
               },
               {
-                "uuid": "a93edccc-35ff-4051-87d3-aef1882d0141",
+                "uuid": "0fb4b697-0c99-4032-9556-05b025203d5d",
                 "control-id": "req-7.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8299,7 +8299,7 @@
                 ]
               },
               {
-                "uuid": "c64ce92e-99f0-4ef9-a80d-c36235b679bb",
+                "uuid": "fe085604-bc38-4bac-9184-f509b94940fd",
                 "control-id": "req-8.1.1",
                 "description": "Openshift should be configured to work with an external third-party\nidentity provider, through the payment entity’s chosen identity\nand authentication provider, unique identifiers can be setup\nfor each user prior to allowing the user to  access components\nof the OpenShift environment. The third party identity provider\ncheck applies to all sub section within 8.1",
                 "props": [
@@ -8316,7 +8316,7 @@
                 ]
               },
               {
-                "uuid": "d8a1deca-4939-4e5c-bfc0-ae8aedd1c8b7",
+                "uuid": "b76019a6-f76e-4a69-b50c-7bbd2437604b",
                 "control-id": "req-8.1.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8329,7 +8329,7 @@
                 ]
               },
               {
-                "uuid": "f9d08a4b-db0e-432d-b45a-990c654f6bf6",
+                "uuid": "a9fce31c-79d4-4f80-8ab7-6f6c303ec3ec",
                 "control-id": "req-8.1.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8342,7 +8342,7 @@
                 ]
               },
               {
-                "uuid": "944d54d5-c79e-44df-ba39-7feb3def606e",
+                "uuid": "9077b8a6-6902-45a2-8a41-7e3a239481c0",
                 "control-id": "req-8.1.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8355,7 +8355,7 @@
                 ]
               },
               {
-                "uuid": "4bcb28f3-3918-4b93-bf2a-1421147eb436",
+                "uuid": "56ff025d-4ebd-48da-ab47-53e5c9a8c5c4",
                 "control-id": "req-8.1.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8368,7 +8368,7 @@
                 ]
               },
               {
-                "uuid": "975bf12d-67e8-47ed-a751-14a8dbaa0151",
+                "uuid": "1adc9c01-dca8-474a-ae7e-059751b6ca41",
                 "control-id": "req-8.1.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8381,7 +8381,7 @@
                 ]
               },
               {
-                "uuid": "2a52834c-91f8-421a-8eb9-f88598abbe71",
+                "uuid": "00aaac23-c635-49ab-a68a-f4c3338c24a4",
                 "control-id": "req-8.1.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8394,7 +8394,7 @@
                 ]
               },
               {
-                "uuid": "71083dc5-11d6-47b0-9dda-e0256a22ef38",
+                "uuid": "e0527bf1-90f5-4bef-8dca-dcd6141ceba0",
                 "control-id": "req-8.1.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8407,7 +8407,7 @@
                 ]
               },
               {
-                "uuid": "341de301-cec8-4de3-83b8-ba74619ae6d1",
+                "uuid": "5d45780e-b749-42de-8c47-0783dd28f3b0",
                 "control-id": "req-8.2.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8420,7 +8420,7 @@
                 ]
               },
               {
-                "uuid": "c2620eb6-e483-4d66-9b71-a8669e084ef2",
+                "uuid": "306b82df-3f5b-4831-bdce-68505d159e02",
                 "control-id": "req-8.2.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8433,7 +8433,7 @@
                 ]
               },
               {
-                "uuid": "3ea47979-7296-4a97-9f15-78ec1b6ef2bb",
+                "uuid": "37537730-6497-469f-a611-44d914d52b91",
                 "control-id": "req-8.2.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8446,7 +8446,7 @@
                 ]
               },
               {
-                "uuid": "2090eae2-b4f4-4232-ac30-bb5ed9341d2b",
+                "uuid": "16f68ea2-f818-48a5-9a67-f158c148f508",
                 "control-id": "req-8.2.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8459,7 +8459,7 @@
                 ]
               },
               {
-                "uuid": "7e96d949-5d96-48bc-8230-d5cebf1f1155",
+                "uuid": "1f5934a3-cba6-4822-8b16-09da22e71f32",
                 "control-id": "req-8.2.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8472,7 +8472,7 @@
                 ]
               },
               {
-                "uuid": "9c68e92b-7ca5-4573-bc00-7244f060ed23",
+                "uuid": "9ae88291-b10d-4c28-ad75-decdad19b55b",
                 "control-id": "req-8.2.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8485,7 +8485,7 @@
                 ]
               },
               {
-                "uuid": "154600e4-7f5d-4aa9-a8cc-221ae94c94c9",
+                "uuid": "5076d386-cc93-4e41-819e-71deb3cbf037",
                 "control-id": "req-8.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8498,7 +8498,7 @@
                 ]
               },
               {
-                "uuid": "899cd3d2-6e17-437a-82c6-8011e67078b1",
+                "uuid": "812df0d2-9cd2-4c1c-9134-fff91f80acce",
                 "control-id": "req-8.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8511,7 +8511,7 @@
                 ]
               },
               {
-                "uuid": "0f674d01-54db-46d8-9839-db0892ca2474",
+                "uuid": "e9e392f4-144c-455c-9a2f-b8d416fb0f6c",
                 "control-id": "req-8.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8524,7 +8524,7 @@
                 ]
               },
               {
-                "uuid": "adb03d68-24d2-4d7b-b07e-336b85a3e4d7",
+                "uuid": "ddc4bae0-f242-4c5c-bee1-0db5511c9ec5",
                 "control-id": "req-8.5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8537,7 +8537,7 @@
                 ]
               },
               {
-                "uuid": "db88c038-f186-4a76-b5e7-d86afc54a38c",
+                "uuid": "9ea53910-1fa2-484a-9769-a070c7155093",
                 "control-id": "req-8.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8550,7 +8550,7 @@
                 ]
               },
               {
-                "uuid": "dc167267-4157-45e3-866e-76d4d03e9fb6",
+                "uuid": "3072e269-0048-45c9-9858-6a6958575f44",
                 "control-id": "req-8.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8563,7 +8563,7 @@
                 ]
               },
               {
-                "uuid": "84f6cfa9-b47c-491b-a4bc-e72e69c09c62",
+                "uuid": "3967846a-9e6c-4eba-ab7b-453d92b4040e",
                 "control-id": "req-8.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8576,7 +8576,7 @@
                 ]
               },
               {
-                "uuid": "5dfa1637-ac36-4d2f-a5d0-0c413052d015",
+                "uuid": "f18f4912-1e3d-48ab-98d1-7ec372139b4f",
                 "control-id": "req-9.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8589,7 +8589,7 @@
                 ]
               },
               {
-                "uuid": "6df33df3-eb8b-4a13-be1a-331fd62c1934",
+                "uuid": "da07f3e3-c197-4897-b72d-4d91bcb1e48b",
                 "control-id": "req-9.1.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8602,7 +8602,7 @@
                 ]
               },
               {
-                "uuid": "a3a7760f-30da-462b-8ac0-e479ecb6ffc2",
+                "uuid": "43538443-e7b7-4310-8624-2fdf32cdb0eb",
                 "control-id": "req-9.1.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8615,7 +8615,7 @@
                 ]
               },
               {
-                "uuid": "533552d8-95ca-4afb-8ec2-7a755da45882",
+                "uuid": "acb6926b-90a1-4b53-9a95-89cacaa87068",
                 "control-id": "req-9.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8628,7 +8628,7 @@
                 ]
               },
               {
-                "uuid": "a960fc8b-6018-446c-a25a-3facca9c61aa",
+                "uuid": "bf9723b6-cd9b-4709-8cbf-e03ae0d34842",
                 "control-id": "req-9.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8641,7 +8641,7 @@
                 ]
               },
               {
-                "uuid": "d7bfaf38-e2f3-4d27-9087-4862f4694610",
+                "uuid": "b72bc331-dabe-48b1-8707-e7077ee6abd1",
                 "control-id": "req-9.4.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8654,7 +8654,7 @@
                 ]
               },
               {
-                "uuid": "b7681989-5caa-43a4-aaa8-dac0b521e8ed",
+                "uuid": "7e24832d-c161-4b71-98f7-1fe17284ef80",
                 "control-id": "req-9.4.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8667,7 +8667,7 @@
                 ]
               },
               {
-                "uuid": "6edddb34-5f60-444e-867a-c5176dc7d082",
+                "uuid": "469d8da0-de69-42f5-ba56-742ccc360758",
                 "control-id": "req-9.4.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8680,7 +8680,7 @@
                 ]
               },
               {
-                "uuid": "60431fa0-e2ab-4073-9be7-e4c09fe76102",
+                "uuid": "17af2a9e-23e7-439b-881a-c40c5f541870",
                 "control-id": "req-9.4.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8693,7 +8693,7 @@
                 ]
               },
               {
-                "uuid": "26112044-5f14-4b54-baa8-55a1e2d8c433",
+                "uuid": "f6d60e1a-9c11-4cc3-b9fd-8e145caa2412",
                 "control-id": "req-9.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8706,7 +8706,7 @@
                 ]
               },
               {
-                "uuid": "c8a6efca-9233-458e-856e-73f391ce258c",
+                "uuid": "099f0fbf-e7ef-42c2-9de3-60f15887cf11",
                 "control-id": "req-9.5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8719,7 +8719,7 @@
                 ]
               },
               {
-                "uuid": "91564c0f-ddbe-476d-bb2e-c9eb1533d482",
+                "uuid": "cda9637e-2bac-460c-bacb-f48ef994d469",
                 "control-id": "req-9.6.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8732,7 +8732,7 @@
                 ]
               },
               {
-                "uuid": "0972c567-9dd9-46de-b618-6b5289e86d1e",
+                "uuid": "05c4b2cd-338e-4a20-9c44-643448e2309f",
                 "control-id": "req-9.6.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8745,7 +8745,7 @@
                 ]
               },
               {
-                "uuid": "98ec9e41-43ea-4571-954a-cecc7b6bc2ac",
+                "uuid": "e35f15c9-20f9-403b-8bd3-085373755803",
                 "control-id": "req-9.6.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8758,7 +8758,7 @@
                 ]
               },
               {
-                "uuid": "f7f25188-e5b8-483e-b443-94f21478264f",
+                "uuid": "54305d59-9103-4cd9-b35a-a915592009bf",
                 "control-id": "req-9.7.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8771,7 +8771,7 @@
                 ]
               },
               {
-                "uuid": "5ea3a36a-6f66-4bc2-b8ce-3d43f0787b74",
+                "uuid": "33d18e86-b419-40e2-98ca-6b29f62961f9",
                 "control-id": "req-9.8.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8784,7 +8784,7 @@
                 ]
               },
               {
-                "uuid": "1cd4bda9-c784-405e-b0af-6134e0310008",
+                "uuid": "cce6541d-0a10-44a6-90fa-d8c45ddfde3e",
                 "control-id": "req-9.8.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8797,7 +8797,7 @@
                 ]
               },
               {
-                "uuid": "55d6771c-22c7-4fad-9ed1-1df832b8943e",
+                "uuid": "b1128c8e-fbf1-4c31-9290-203b03ee7926",
                 "control-id": "req-9.9.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8810,7 +8810,7 @@
                 ]
               },
               {
-                "uuid": "71211455-4e8c-4754-9596-74047bb17cd6",
+                "uuid": "c3bb71ef-349f-4943-8430-653564278f98",
                 "control-id": "req-9.9.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8823,7 +8823,7 @@
                 ]
               },
               {
-                "uuid": "9730af64-34f8-4071-ac95-9537c8e0ecf4",
+                "uuid": "3ef2a39d-4066-4257-b0a1-4a042b4bb4d2",
                 "control-id": "req-9.9.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8836,7 +8836,7 @@
                 ]
               },
               {
-                "uuid": "f9e46275-37c9-4472-a7f3-7bee8fd0b4b0",
+                "uuid": "e8ed268c-dfe4-4e92-a3ef-a9361f1b8bcc",
                 "control-id": "req-9.10",
                 "description": "REPLACE_ME",
                 "props": [
@@ -8849,7 +8849,7 @@
                 ]
               },
               {
-                "uuid": "797e8e69-f8b4-467f-adbf-7bbcfade2784",
+                "uuid": "723733cd-04c0-4bd1-892c-fa6a3c10afde",
                 "control-id": "req-10.1",
                 "description": "All actions taken by users of OpenShift are logged and capable of being used to satisfy audit requirements.",
                 "props": [
@@ -8861,7 +8861,7 @@
                 ]
               },
               {
-                "uuid": "f3c21b5a-327b-4695-9bad-f31c2bb7d725",
+                "uuid": "f9c463dd-d6f9-429a-b06b-b15eda68c02e",
                 "control-id": "req-10.2.1",
                 "description": "All user and/or service account accesses to OpenShift components are logged. The payment entity would be responsible for enabling logging for access to applications within workloads hosted in containers in OpenShift.",
                 "props": [
@@ -8873,7 +8873,7 @@
                 ]
               },
               {
-                "uuid": "9ecd0eee-9c40-4947-83ef-a8052ad758ec",
+                "uuid": "c4e34c80-9a45-4cb5-95e7-2f071ca08eb7",
                 "control-id": "req-10.2.2",
                 "description": "All actions taken by individual with root or administrative privileges to OpenShift and Red Hat CoreOS are logged.",
                 "props": [
@@ -8885,7 +8885,7 @@
                 ]
               },
               {
-                "uuid": "3f5358e6-c2d0-4b23-a436-e498a6aa1c3e",
+                "uuid": "c604ba48-89a8-400f-a5e7-38dcbfd96a25",
                 "control-id": "req-10.2.3",
                 "description": "Access to audit trails relative to OpenShift are made available at the OS level with administrator accounts. Red Hat CoreOS can be configured to log access to the journal or log file. For better protection of audit trails, including improved access controls, it is recommended to direct logs to an external log server or Security Information Event Management (SIEM) solution.",
                 "props": [
@@ -8897,7 +8897,7 @@
                 ]
               },
               {
-                "uuid": "2f367b0b-92b8-4624-a4e0-93efc39d92ef",
+                "uuid": "f3d61b4c-5169-45c2-9ce4-05d462eb9cb4",
                 "control-id": "req-10.2.4",
                 "description": "Invalid logical access attempts pertaining to incorrect input of credentials would be handled by the payment entity’s chosen identity provider. Unauthorized attempts to access system components or run unauthorized commands against OpenShift are logged.",
                 "props": [
@@ -8909,7 +8909,7 @@
                 ]
               },
               {
-                "uuid": "2d5bd4b2-3e53-44d4-8b8a-291ca6e8149c",
+                "uuid": "ccd4181d-4b89-49e2-b6ba-666f87d4e9a1",
                 "control-id": "req-10.2.5",
                 "description": "Like 10.2.4, changes to identification and authentication mechanisms would be handled by the payment entity’s chosen identity provider. Changes that are made to RBAC within OpenShift are logged. These logged events may be an indication of attempts to modify defined roles to grant additional privileges.",
                 "props": [
@@ -8921,7 +8921,7 @@
                 ]
               },
               {
-                "uuid": "d72e1dbd-abb8-4d34-a2a5-23310b6a994c",
+                "uuid": "48dcb2e2-5c63-47e1-becb-b88e1a6a360e",
                 "control-id": "req-10.2.6",
                 "description": "Stopping the mechanisms for log creation in OpenShift requires stopping the OpenShift Control Plane itself, which would have the effect of preventing any further access for any users to the API, CLI, or Web UI. Auditing within OpenShift cannot be reconfigured or stopped without reconfiguring OpenShift. Any attempt to reconfigure OpenShift will be logged.",
                 "props": [
@@ -8933,7 +8933,7 @@
                 ]
               },
               {
-                "uuid": "4bfd8573-cf7b-4178-9ab4-11786a5ef44c",
+                "uuid": "6da57c25-75aa-4678-99ae-d95d434142c8",
                 "control-id": "req-10.2.7",
                 "description": "Creation and deletion of system levels objects is logged by OpenShift (for OpenShift objects) and by Red Hat CoreOS.",
                 "props": [
@@ -8945,7 +8945,7 @@
                 ]
               },
               {
-                "uuid": "dc36c898-7ff6-43cd-a138-670d10356a99",
+                "uuid": "87fa72d1-82ac-4bfb-97f1-2b67ddfe5a77",
                 "control-id": "req-10.3.1",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include user identification.",
                 "props": [
@@ -8957,7 +8957,7 @@
                 ]
               },
               {
-                "uuid": "cfe0b2c8-476c-4bd4-a123-9d3dfd62b148",
+                "uuid": "528d2c64-13a1-4709-84f6-a60b040ba715",
                 "control-id": "req-10.3.2",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include the type of event.",
                 "props": [
@@ -8969,7 +8969,7 @@
                 ]
               },
               {
-                "uuid": "54635c21-8fe4-4ac3-8dcd-26afa75399be",
+                "uuid": "89534fbd-9fd3-4658-9bc1-b6a571de0ae2",
                 "control-id": "req-10.3.3",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include the date and time of the event.",
                 "props": [
@@ -8981,7 +8981,7 @@
                 ]
               },
               {
-                "uuid": "c9f28e4e-9590-4e6d-a323-0525791762df",
+                "uuid": "cca06035-572f-4f9d-b148-2441e44f526d",
                 "control-id": "req-10.3.4",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include a success or failure indication.",
                 "props": [
@@ -8993,7 +8993,7 @@
                 ]
               },
               {
-                "uuid": "76385719-c60c-487d-a591-9e9b911a55b1",
+                "uuid": "00b408cb-223c-460d-84cc-c470b1f5d8ba",
                 "control-id": "req-10.3.5",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include the origination of the event.",
                 "props": [
@@ -9005,7 +9005,7 @@
                 ]
               },
               {
-                "uuid": "fce7ffa0-86f5-42d5-ab43-f67cb6a8fab0",
+                "uuid": "8e2a1b3d-4b89-4a2d-8007-c3b51d252d9e",
                 "control-id": "req-10.3.6",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include the identity or name of affected data, system component, or resource.",
                 "props": [
@@ -9017,7 +9017,7 @@
                 ]
               },
               {
-                "uuid": "28221622-704d-41a8-be76-3aaaf0192f20",
+                "uuid": "b0309271-81a0-48ed-aa8d-8fead5fff183",
                 "control-id": "req-10.4.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9030,7 +9030,7 @@
                 ]
               },
               {
-                "uuid": "9915f75f-e5a2-4209-8b27-caedf6ba2033",
+                "uuid": "c8c90b2e-01b1-4028-b118-721fdfcff527",
                 "control-id": "req-10.4.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9043,7 +9043,7 @@
                 ]
               },
               {
-                "uuid": "c231bda6-6d64-4126-9c77-ffed693ba745",
+                "uuid": "a0898235-65a5-4ab1-8722-0d18d2c9b471",
                 "control-id": "req-10.4.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9056,7 +9056,7 @@
                 ]
               },
               {
-                "uuid": "77e25af8-6bce-4dd9-b385-0ea8365291d5",
+                "uuid": "98563a52-0d62-4fc1-95af-5cdbf9bd0c69",
                 "control-id": "req-10.5.1",
                 "description": "It is recommended to use an external log aggregation solution or SIEM solution for securing audit trails. While the logs reside on the Red Hat CoreOS server, access can be controlled using RBAC. An external solution may be better equipped to secure audit trails in alignment with compliance requirements. RBAC controls in Red Hat CoreOS can be used to limit the ability to review audit logs and journals. An external solution may be able to provide improved granularity as well as search capability that would be of better use to the payment entity to satisfy requirements.",
                 "props": [
@@ -9073,7 +9073,7 @@
                 ]
               },
               {
-                "uuid": "04f20b93-492a-4966-ac11-449fee318de8",
+                "uuid": "eb67e400-eb5c-4da7-954f-849b097c58b3",
                 "control-id": "req-10.5.2",
                 "description": "Limited access to the audit trails on OpenShift hosts provides minimal protection from unauthorized modification. Use of an external log collector or SIEM solution may provide improved protections against unauthorized modifications by adding additional features such as file integrity monitoring, digital signing, or Write Once, Read Many (WORM) storage.",
                 "props": [
@@ -9130,7 +9130,7 @@
                 ]
               },
               {
-                "uuid": "6193c2fd-3f61-4401-8408-6c04359abf7b",
+                "uuid": "019003f4-fc5a-4556-a343-435025f7d203",
                 "control-id": "req-10.5.3",
                 "description": "Limited access to the audit trails on OpenShift hosts provides minimal protection from unauthorized modification. Use of an external log collector or SIEM solution may provide improved protections against unauthorized modifications by adding additional features such as file integrity monitoring, digital signing, or Write Once, Read Many (WORM) storage.",
                 "props": [
@@ -9167,7 +9167,7 @@
                 ]
               },
               {
-                "uuid": "411aaac9-85d0-490d-b672-5642f29e3833",
+                "uuid": "23588958-7819-4c05-8f08-a1c754fc1379",
                 "control-id": "req-10.5.4",
                 "description": "Limited access to the audit trails on OpenShift hosts provides minimal protection from unauthorized modification. Use of an external log collector or SIEM solution may provide improved protections against unauthorized modifications by adding additional features such as file integrity monitoring, digital signing, or Write Once, Read Many (WORM) storage.",
                 "props": [
@@ -9204,7 +9204,7 @@
                 ]
               },
               {
-                "uuid": "9fe43dc6-ab20-4bc1-a5d2-99373b554ce8",
+                "uuid": "9e75fa86-7172-4792-9951-1604b3f6f3a9",
                 "control-id": "req-10.5.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9221,7 +9221,7 @@
                 ]
               },
               {
-                "uuid": "584753d7-ee2f-4aef-856e-dfcdc2ead547",
+                "uuid": "878cbc02-98c8-46f9-aeed-d86e54f5bb89",
                 "control-id": "req-10.6.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9234,7 +9234,7 @@
                 ]
               },
               {
-                "uuid": "9820ea2b-d01a-4473-b044-6dfe0d4ea0c5",
+                "uuid": "2a070362-29a1-46ac-a8c0-734d544eb99b",
                 "control-id": "req-10.6.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9247,7 +9247,7 @@
                 ]
               },
               {
-                "uuid": "731608cb-2fe3-4949-acb9-8f6e16c583ad",
+                "uuid": "de92aa80-a2d6-4430-a7a6-35df01a0c8d6",
                 "control-id": "req-10.6.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9260,7 +9260,7 @@
                 ]
               },
               {
-                "uuid": "64156789-8a19-4c43-8909-d372547413d7",
+                "uuid": "3dd5e653-e7e9-4083-bd0d-f52c72c8c9ad",
                 "control-id": "req-10.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9273,7 +9273,7 @@
                 ]
               },
               {
-                "uuid": "60dcf588-935c-4f6c-820c-03d763654a61",
+                "uuid": "6057a8b4-e819-4959-b2d0-19fe71ff29aa",
                 "control-id": "req-10.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9286,7 +9286,7 @@
                 ]
               },
               {
-                "uuid": "8dd9b72a-7e7a-4949-b85e-e52535a9a458",
+                "uuid": "7c3dbe08-ce7b-4a84-9ff9-4fde7defa89a",
                 "control-id": "req-11.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9299,7 +9299,7 @@
                 ]
               },
               {
-                "uuid": "72ed82ad-2ead-4157-985a-dc5545fc861d",
+                "uuid": "bcf4cc45-a1ae-4467-802c-1e33f5c55b74",
                 "control-id": "req-11.1.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9312,7 +9312,7 @@
                 ]
               },
               {
-                "uuid": "86049656-fff0-4d44-8b56-e24196fdc8e5",
+                "uuid": "4896b8b9-7c54-4cc8-ba40-0bc7914f0d05",
                 "control-id": "req-11.2.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9325,7 +9325,7 @@
                 ]
               },
               {
-                "uuid": "cfc201c5-80c3-4bae-8409-dc938493d957",
+                "uuid": "33a1c0f7-5f41-4b3b-b9c6-0163aaf7da50",
                 "control-id": "req-11.2.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9338,7 +9338,7 @@
                 ]
               },
               {
-                "uuid": "073f19af-0184-4a8e-b955-33ba28b947dc",
+                "uuid": "f637a1c7-8ff2-48ef-bc5e-3262af10a8bd",
                 "control-id": "req-11.2.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9351,7 +9351,7 @@
                 ]
               },
               {
-                "uuid": "d093fd45-f035-4129-8ed1-2f61fe685239",
+                "uuid": "0213545f-be8b-4ded-9241-9668ad27e34b",
                 "control-id": "req-11.3.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9364,7 +9364,7 @@
                 ]
               },
               {
-                "uuid": "e557282a-0e9c-46e9-8ac3-164a0cb49418",
+                "uuid": "c1356d31-c682-456e-87e7-439f5f6e83f9",
                 "control-id": "req-11.3.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9377,7 +9377,7 @@
                 ]
               },
               {
-                "uuid": "dd07a4f3-aa2d-4766-ae04-6639e99c7479",
+                "uuid": "d56caff6-15f1-42cd-b836-88b8360e5d9b",
                 "control-id": "req-11.3.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9390,7 +9390,7 @@
                 ]
               },
               {
-                "uuid": "9fb9d103-b303-4dfd-87e8-5d0203371140",
+                "uuid": "e777f805-3563-480f-8288-7391237d9234",
                 "control-id": "req-11.3.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9403,7 +9403,7 @@
                 ]
               },
               {
-                "uuid": "a0a65076-b06f-4dd4-a96d-8c34b6705226",
+                "uuid": "771251cd-1bb0-480a-b29d-e3e0755f1b98",
                 "control-id": "req-11.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9416,7 +9416,7 @@
                 ]
               },
               {
-                "uuid": "8de81b7b-b364-422a-a2bf-ac4984f4a8d6",
+                "uuid": "363964e2-6230-4b03-9704-f8c92d7a1edf",
                 "control-id": "req-11.5.1",
                 "description": "While this is a control that's meant for the payment entity to set up a process\nto respond to alerts, OpenShift Container Platform's File Integrity Operator\nsupports alerts via that can be ingested by AlertManager.[1]\n\n[1] https://docs.openshift.com/container-platform/latest/monitoring/managing-alerts.html",
                 "props": [
@@ -9433,7 +9433,7 @@
                 ]
               },
               {
-                "uuid": "854983c1-5ac4-476b-a1cf-9a3f3897a256",
+                "uuid": "ef0f93be-1faa-41c1-aa4e-9580693cfbb1",
                 "control-id": "req-11.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9446,7 +9446,7 @@
                 ]
               },
               {
-                "uuid": "8b05db4b-ea63-4267-a734-cb6a86230367",
+                "uuid": "d74130dd-6d14-4261-b633-bb86773cc8e1",
                 "control-id": "req-12.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9459,7 +9459,7 @@
                 ]
               },
               {
-                "uuid": "3ec9044c-fc8a-466d-9b57-8421e67bfb43",
+                "uuid": "e7022256-a705-46ae-8e4c-8b93e4fcf02d",
                 "control-id": "req-12.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9472,7 +9472,7 @@
                 ]
               },
               {
-                "uuid": "c27c5e51-df30-447a-8981-aad821b3995e",
+                "uuid": "7a369b79-8439-43c1-958d-ab05e4003141",
                 "control-id": "req-12.3.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9485,7 +9485,7 @@
                 ]
               },
               {
-                "uuid": "8b818745-6312-44bf-8a0c-02a73a48c989",
+                "uuid": "9d8959e0-c1ed-433c-9497-1d1d46855360",
                 "control-id": "req-12.3.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9498,7 +9498,7 @@
                 ]
               },
               {
-                "uuid": "7947e701-ea21-4ff3-bbc8-2bf87ddf37b5",
+                "uuid": "6f336b3a-1644-498f-a6fa-52443f754782",
                 "control-id": "req-12.3.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9511,7 +9511,7 @@
                 ]
               },
               {
-                "uuid": "1bdefce6-ed53-4b97-9706-cc81754fc34d",
+                "uuid": "9021d658-a2a6-4780-bc4c-bf8406311a93",
                 "control-id": "req-12.3.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9524,7 +9524,7 @@
                 ]
               },
               {
-                "uuid": "c324c8f7-2dae-4054-9897-5cec893f3dd8",
+                "uuid": "c1bb8f85-e245-40da-88db-3504de86baf2",
                 "control-id": "req-12.3.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9537,7 +9537,7 @@
                 ]
               },
               {
-                "uuid": "e8d5475c-06fd-4902-9934-9fa51ecbd774",
+                "uuid": "242d0fb9-eb83-4fb6-a79a-27b4823264ac",
                 "control-id": "req-12.3.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9550,7 +9550,7 @@
                 ]
               },
               {
-                "uuid": "a1db8b87-4180-4241-8467-abdb8dfd7eef",
+                "uuid": "30f7aa6f-6304-4482-8672-c2ba11f6d6c4",
                 "control-id": "req-12.3.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9563,7 +9563,7 @@
                 ]
               },
               {
-                "uuid": "4fe9c2b9-5db5-468b-9f9e-ca2612fa4e48",
+                "uuid": "914d9d2a-89fd-4a84-9d3e-ebff6b37c20f",
                 "control-id": "req-12.3.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9576,7 +9576,7 @@
                 ]
               },
               {
-                "uuid": "9231a4e7-ec0c-4314-baa2-b5dfd4cb0350",
+                "uuid": "b2b12c47-b216-4909-9425-69379333c49d",
                 "control-id": "req-12.3.9",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9589,7 +9589,7 @@
                 ]
               },
               {
-                "uuid": "49979c73-259d-4a26-b159-3cc66311ac4e",
+                "uuid": "08fc6153-6d62-4d64-9685-34114533e156",
                 "control-id": "req-12.3.10",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9602,7 +9602,7 @@
                 ]
               },
               {
-                "uuid": "0034d4fc-2c30-4260-91de-84818c94bfc8",
+                "uuid": "28300d39-e41c-4f5c-be7a-96ed3db63f9e",
                 "control-id": "req-12.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9615,7 +9615,7 @@
                 ]
               },
               {
-                "uuid": "2f7b4269-0657-4dfc-ae40-1a30fac41f6a",
+                "uuid": "4b5cfa73-fdfa-4839-99cb-6a6314339427",
                 "control-id": "req-12.5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9628,7 +9628,7 @@
                 ]
               },
               {
-                "uuid": "50dcc6c7-29ce-4d5a-a5ea-77d3d4e1a4c7",
+                "uuid": "aabba930-e195-448a-a569-22eb2d26fdc3",
                 "control-id": "req-12.5.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9641,7 +9641,7 @@
                 ]
               },
               {
-                "uuid": "0443aeef-dfc2-4c73-8e83-2006e54ccb6a",
+                "uuid": "68f64021-e01b-4132-b855-3e3c31f5e8ab",
                 "control-id": "req-12.5.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9654,7 +9654,7 @@
                 ]
               },
               {
-                "uuid": "3bae23ce-ac77-49ca-9710-1f3fe802805c",
+                "uuid": "f70df57d-0d2b-47f2-93ae-ca1f2b47df24",
                 "control-id": "req-12.5.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9667,7 +9667,7 @@
                 ]
               },
               {
-                "uuid": "3fb149a1-1196-4b68-ae75-d2f06e216a0a",
+                "uuid": "f1cc7f68-310b-4bbc-b0f8-043700baad10",
                 "control-id": "req-12.5.5",
                 "description": "All accesses and operations to OpenShift objects are audited\naccordingly. Auditing cannot be turned off in the OpenShift\nContainer Platform.",
                 "props": [
@@ -9684,7 +9684,7 @@
                 ]
               },
               {
-                "uuid": "bb3426d3-ad0a-428e-aecd-f4a696150bbf",
+                "uuid": "fb32357a-663e-4050-8b5b-6e54e67f582b",
                 "control-id": "req-12.6.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9697,7 +9697,7 @@
                 ]
               },
               {
-                "uuid": "584bc2a5-684d-4798-a45a-7b2fa819e20a",
+                "uuid": "67ec7764-61ab-4d63-b802-0bdf17b4dba2",
                 "control-id": "req-12.6.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9710,7 +9710,7 @@
                 ]
               },
               {
-                "uuid": "2ea007db-7d13-4c6c-9116-1324c3df0663",
+                "uuid": "bbb62b82-419e-44f7-9389-4d3c575ccf05",
                 "control-id": "req-12.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9723,7 +9723,7 @@
                 ]
               },
               {
-                "uuid": "bc204df6-b5cd-4cbf-b7f2-5041865dea1f",
+                "uuid": "224a7054-0c6b-416d-b15b-452f1c4494a9",
                 "control-id": "req-12.8.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9736,7 +9736,7 @@
                 ]
               },
               {
-                "uuid": "5e457d66-0836-4236-ab55-41cafc00639b",
+                "uuid": "deca9f42-74f6-417f-b76e-81648e99355b",
                 "control-id": "req-12.8.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9749,7 +9749,7 @@
                 ]
               },
               {
-                "uuid": "f05db76f-0dbb-44cf-80f1-b3a479acf91c",
+                "uuid": "e8ff72d4-1a88-4ad6-b4c3-8c2eb34b94b8",
                 "control-id": "req-12.8.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9762,7 +9762,7 @@
                 ]
               },
               {
-                "uuid": "43e7e150-0fa0-43ac-ba7b-b6961210b85e",
+                "uuid": "dbb9dadb-3452-43ec-89ef-4f48bb5b3f1a",
                 "control-id": "req-12.8.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9775,7 +9775,7 @@
                 ]
               },
               {
-                "uuid": "234cfbd8-d4c2-46ff-8f8c-8d49f553dfed",
+                "uuid": "2b8ca18d-377f-41e0-b145-acc562518f72",
                 "control-id": "req-12.8.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9788,7 +9788,7 @@
                 ]
               },
               {
-                "uuid": "8cf45a0d-bd0e-4ce6-993e-fc9e20765a39",
+                "uuid": "a4815f7e-8f74-45a9-80d7-598b712e6cbc",
                 "control-id": "req-12.9",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9801,7 +9801,7 @@
                 ]
               },
               {
-                "uuid": "4d4839b6-ea84-453b-b040-0e57c0df8dab",
+                "uuid": "ece4bf95-8c97-439b-847f-f901383d2383",
                 "control-id": "req-12.10.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9814,7 +9814,7 @@
                 ]
               },
               {
-                "uuid": "0a45c902-f2fe-43d9-b733-ee4a49b6cab4",
+                "uuid": "57dc570f-1533-4d32-9c34-d6bae19aedc2",
                 "control-id": "req-12.10.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9827,7 +9827,7 @@
                 ]
               },
               {
-                "uuid": "11b00275-2816-4aa3-96ce-2ab252ca4568",
+                "uuid": "9d3bd2a7-7669-46dc-b745-9126ccee07a4",
                 "control-id": "req-12.10.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9840,7 +9840,7 @@
                 ]
               },
               {
-                "uuid": "e51ef180-0c47-4786-92f5-9c756051c03e",
+                "uuid": "4006891b-56f1-49d9-b131-4e5ef3ea4605",
                 "control-id": "req-12.10.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -9853,7 +9853,7 @@
                 ]
               },
               {
-                "uuid": "045cf0c6-6f84-4719-b39e-0d71b3b9687a",
+                "uuid": "f4af039d-34ef-4517-b890-9c93207fc466",
                 "control-id": "req-12.10.5",
                 "description": "This is a requirement for the incident response program, and its the responsibility of the\npayment entity to include such information. However, the OpenShift Container Platform\ndoes come with a monitoring stack that allows for transforming metrics into relevant\nalerts [1]\nOpenShift Container Platform's File Integrity Operator supports alerts via AlertManager\n[1] https://docs.openshift.com/container-platform/4.9/monitoring/managing-alerts.html",
                 "props": [
@@ -9870,7 +9870,7 @@
                 ]
               },
               {
-                "uuid": "7cd30921-8ed0-4e4b-9606-f547aee66e61",
+                "uuid": "085179c7-a5db-45d7-aa5a-562940561c70",
                 "control-id": "req-12.10.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19345,7 +19345,7 @@
         ],
         "control-implementations": [
           {
-            "uuid": "8521b87c-7da3-4f7b-89ab-00be1bb22f45",
+            "uuid": "3331f2fe-1430-4435-9bdb-9cb19102d87c",
             "source": "trestle://profiles/ocp4-pcidss_ocp4-base/profile.json",
             "description": "REPLACE_ME",
             "props": [
@@ -19365,7 +19365,7 @@
             ],
             "implemented-requirements": [
               {
-                "uuid": "e69c8e39-d8c2-46b4-ab0a-89662b72ec7c",
+                "uuid": "a3b6c7f0-045a-444c-8ef6-ee147504cc2b",
                 "control-id": "req-1.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19378,7 +19378,7 @@
                 ]
               },
               {
-                "uuid": "c6f9234f-9e27-4dda-8dae-2f46bf10f642",
+                "uuid": "0b6fda2a-a58d-43ff-9feb-9b79e75648f3",
                 "control-id": "req-1.1.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19391,7 +19391,7 @@
                 ]
               },
               {
-                "uuid": "2e0aeee0-2ddf-49e7-846f-b3abb71b6803",
+                "uuid": "ef28e008-8b31-4b11-a026-be4cc9337030",
                 "control-id": "req-1.1.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19404,7 +19404,7 @@
                 ]
               },
               {
-                "uuid": "eb7d41c8-05ef-4df9-95ae-dd79e8cd173a",
+                "uuid": "7e271ac9-7622-4be9-a023-50f8938e352e",
                 "control-id": "req-1.1.4",
                 "description": "While there will be a firewall protecting the cluster from outside traffic,\nnetwork connectivity within the cluster is handled by the SDN plugin and\nis configurable via NetworkPolicies [1]. We can ensure that each non-control\nplane namespace has a NetworkPolicy enabled, but it's still the responsibility\nof the system administrator to ensure that the policy is correct.\n\n[1] https://docs.openshift.com/container-platform/latest/networking/network_policy/about-network-policy.html",
                 "props": [
@@ -19431,7 +19431,7 @@
                 ]
               },
               {
-                "uuid": "525621c7-b9cd-4b8f-8eb4-2532055f7179",
+                "uuid": "3e1faa03-f4ef-4d1e-9bcc-43f8f6701223",
                 "control-id": "req-1.1.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19444,7 +19444,7 @@
                 ]
               },
               {
-                "uuid": "1dd2aad8-fdb1-4c01-9bfa-73362e3e4529",
+                "uuid": "0eea6422-c445-45b5-906d-eec5abb8ee40",
                 "control-id": "req-1.1.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19457,7 +19457,7 @@
                 ]
               },
               {
-                "uuid": "804740ab-8364-4d01-b890-e10abf4e2ad4",
+                "uuid": "04477640-acfe-4401-bb8b-ae6f622c53e6",
                 "control-id": "req-1.1.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19470,7 +19470,7 @@
                 ]
               },
               {
-                "uuid": "9753074d-c429-41ee-97d0-2eb1c518668c",
+                "uuid": "ee9be9e0-195d-40a9-bad5-0b1b1864e5d3",
                 "control-id": "req-1.2.1",
                 "description": "East-West traffic in the cluster can be managed via NetworkPolicies [1]. So,\nwe can verify that each non-control plane namespace has a relevant NetworkPolicy enabled.\nHowever, Egress traffic needs to be taken into account as well, and this setup\nwill vary depending on the SDN plugin used [2][3].\n\n[1] https://docs.openshift.com/container-platform/latest/networking/network_policy/about-network-policy.html\n[2] https://docs.openshift.com/container-platform/latest/networking/openshift_sdn/configuring-egress-firewall.html\n[3] https://docs.openshift.com/container-platform/latest/networking/ovn_kubernetes_network_provider/configuring-egress-firewall-ovn.html",
                 "props": [
@@ -19492,7 +19492,7 @@
                 ]
               },
               {
-                "uuid": "8478744e-dedd-48aa-aed7-ac3254a1e1d8",
+                "uuid": "7f31d931-235c-40b6-9c19-bfdc3a01b772",
                 "control-id": "req-1.2.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19505,7 +19505,7 @@
                 ]
               },
               {
-                "uuid": "6bca2890-fed1-4071-a2dd-c6896f7d9fcf",
+                "uuid": "5d2ea48b-2a31-4a17-ae20-768684bba178",
                 "control-id": "req-1.2.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19518,7 +19518,7 @@
                 ]
               },
               {
-                "uuid": "34f90db7-031c-473a-90d3-5708d93b0509",
+                "uuid": "05706696-f46b-4780-85a5-1e7905bca471",
                 "control-id": "req-1.3.1",
                 "description": "To a limited degree, OpenShift's ingress routing (enabled by default)\nand NetworkPolicies can support restriction of inbound traffic to pods.\nFurther restricting needs to happen on the cloud where OpenShift is deployed\nat, but that's outside of OpenShift's scope.",
                 "props": [
@@ -19540,7 +19540,7 @@
                 ]
               },
               {
-                "uuid": "49e89c83-2c81-438b-a9f6-267892e641ca",
+                "uuid": "2984e8d3-0d6f-4b34-b004-be0a880fd744",
                 "control-id": "req-1.3.2",
                 "description": "To a limited degree, OpenShift's ingress routing (enabled by default)\nand NetworkPolicies can support restriction of inbound traffic to pods.\nFurther restricting needs to happen on the cloud where OpenShift is deployed\nat, but that's outside of OpenShift's scope.",
                 "props": [
@@ -19562,7 +19562,7 @@
                 ]
               },
               {
-                "uuid": "1130c6bf-603e-411c-80a8-8546573c21ea",
+                "uuid": "ea271106-9460-4d9e-b189-0f58afa8486a",
                 "control-id": "req-1.3.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19575,7 +19575,7 @@
                 ]
               },
               {
-                "uuid": "3c8702fc-ceb1-4b7a-9380-2dd5c2cdad2e",
+                "uuid": "f1d0b941-9990-435f-b2cb-37bdb8847513",
                 "control-id": "req-1.3.4",
                 "description": "OpenShift can support authorization of outbound traffic via\negress  policy  objects[1][2].\n\n[1] https://docs.openshift.com/container-platform/latest/networking/openshift_sdn/configuring-egress-firewall.html\n[2] https://docs.openshift.com/container-platform/latest/networking/ovn_kubernetes_network_provider/configuring-egress-firewall-ovn.html",
                 "props": [
@@ -19587,7 +19587,7 @@
                 ]
               },
               {
-                "uuid": "2c74bed3-bd0b-43c4-822f-50d395ae4652",
+                "uuid": "b977ee76-d216-4e73-8dcb-47191169b032",
                 "control-id": "req-1.3.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19600,7 +19600,7 @@
                 ]
               },
               {
-                "uuid": "53e8102e-1c55-40da-8cb1-fc62b5baacb7",
+                "uuid": "a61be038-670a-48b4-8624-8cbf196587ed",
                 "control-id": "req-1.3.6",
                 "description": "Segregation of such system components can take place using the same\nnetwork segregation mechanisms that OpenShift already supports [1][2][3]:\n\n* Ingress\n* NetworkPolicies\n* Egress Policies\n\nSpecial attention needs to be taken to audit that these components\nare appropriately segregated by the aforementioned mechanisms\n\n[1] https://docs.openshift.com/container-platform/latest/networking/network_policy/about-network-policy.html\n[2] https://docs.openshift.com/container-platform/latest/networking/openshift_sdn/configuring-egress-firewall.html\n[3] https://docs.openshift.com/container-platform/latest/networking/ovn_kubernetes_network_provider/configuring-egress-firewall-ovn.html",
                 "props": [
@@ -19622,7 +19622,7 @@
                 ]
               },
               {
-                "uuid": "5fb6a1d0-b899-463f-811d-c1c180def917",
+                "uuid": "675f8073-d04c-44a8-bd24-33a3d43c1d5c",
                 "control-id": "req-1.3.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19635,7 +19635,7 @@
                 ]
               },
               {
-                "uuid": "2d9e9bbd-1fd1-4b45-9e61-71c2410286b5",
+                "uuid": "0d113d6c-41aa-45a3-9c1c-2bb4ece8f105",
                 "control-id": "req-1.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19648,7 +19648,7 @@
                 ]
               },
               {
-                "uuid": "33271ceb-0dad-4a97-9351-e25e38d72c83",
+                "uuid": "48411bdd-3bf7-483a-8f96-703b8cdd32dd",
                 "control-id": "req-1.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19661,7 +19661,7 @@
                 ]
               },
               {
-                "uuid": "76afab5e-45fe-4c9a-b5b1-bcf862ccf291",
+                "uuid": "40eb2ddc-ba97-42c4-8408-256b6e9d9cca",
                 "control-id": "req-2.1",
                 "description": "The Openshift Platform doesn't come with any hardcoded credentials or passwords.\nAuthenticators are uniquely created at deployment-time, including credentials\nfor an admin user (called `kubeadmin`) which is meant for bootstrapping purposes.\n\nIt is recommended for deployers to delete this account in favor of using an IdP\nand setting up appropriate permissions via RBAC roles.",
                 "props": [
@@ -19678,7 +19678,7 @@
                 ]
               },
               {
-                "uuid": "03e74834-32a8-4160-b9f6-c114d6de65ef",
+                "uuid": "fcaf7edf-36c5-4d17-8a0d-f062346321d9",
                 "control-id": "req-2.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19691,7 +19691,7 @@
                 ]
               },
               {
-                "uuid": "b56be46b-7cfe-40e1-9f54-dc9a91f242ad",
+                "uuid": "69823b75-3ea7-46c0-89ae-daf267270519",
                 "control-id": "req-2.2.1",
                 "description": "OpenShift nodes run RHEL CoreOS by default, which contains only the\nnecessary services, protocols and daemons needed to run OpenShift and\ncontainers. OpenShift provides the means to separate application\nworkloads within the cluster onto separate hosts and containers. It\nis the responsibility of the organization to appropriately separate\ntheir applications into relevant containers to meet this control.",
                 "props": [
@@ -19703,7 +19703,7 @@
                 ]
               },
               {
-                "uuid": "729c6131-9724-44d0-99b0-719d2c578752",
+                "uuid": "c0dbd83b-f6eb-4489-9250-626f55261e61",
                 "control-id": "req-2.2.2",
                 "description": "RHEL CoreOS runs only the necessary services, protocols and daemons required\nfor the functionality of OpenShift itself.",
                 "props": [
@@ -19715,7 +19715,7 @@
                 ]
               },
               {
-                "uuid": "63b7c985-ac61-499d-8bc1-4d9b2fbab121",
+                "uuid": "d642215f-05cf-4eff-b42a-7f0774487a2d",
                 "control-id": "req-2.2.3",
                 "description": "OpenShift does not require any insecure services, protocols or daemons for\nproper functioning. The deployment comes with TLS enabled by default with\nstrong ciphers and an appropriate version enabled.",
                 "props": [
@@ -19832,7 +19832,7 @@
                 ]
               },
               {
-                "uuid": "7026c95a-1080-4ae6-a2f8-bd1fdc25a550",
+                "uuid": "790b2580-9bf9-44f5-abc5-97f71ddd9b33",
                 "control-id": "req-2.2.4",
                 "description": "While it's possible to manually configure the security settings\nin the Openshift Container Platform, the Compliance Operator provides\nan automated way of checking for a secure configuration and automatically\nremediating issues according to known security standards. It's usage\nis recommended to ensure appropriate configuration is set and prevent\ndrift.",
                 "props": [
@@ -19849,7 +19849,7 @@
                 ]
               },
               {
-                "uuid": "6713dc8d-4ae9-4a92-b6dc-ac48a642f10a",
+                "uuid": "676d5557-ea2e-4faa-b563-a32879c536bf",
                 "control-id": "req-2.2.5",
                 "description": "The OpenShift Container Platform uses RHEL CoreOS by default. In itself, it's\na minimal operating system with the sole purpose of running OpenShift. Therefore\nit doesn't contain extra packages or functionality; only the minimal that's meant\nto run OpenShift. RHCOS is the recommended operating system for OpenShift.",
                 "props": [
@@ -19861,7 +19861,7 @@
                 ]
               },
               {
-                "uuid": "8f5c14a5-db42-4c65-bd03-5381ec9679f9",
+                "uuid": "1959c142-476e-49da-8d56-7fd9bc9879c4",
                 "control-id": "req-2.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -19988,7 +19988,7 @@
                 ]
               },
               {
-                "uuid": "fcee85e5-70fa-4de8-ba7a-ef25dddc9164",
+                "uuid": "7ee62731-b887-4f2e-93b6-73aadec066ca",
                 "control-id": "req-2.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20001,7 +20001,7 @@
                 ]
               },
               {
-                "uuid": "37a7bc61-8f88-4b2f-87a3-defddd95cad2",
+                "uuid": "f63da338-d340-48f0-80a9-fea25080ec0f",
                 "control-id": "req-2.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20014,7 +20014,7 @@
                 ]
               },
               {
-                "uuid": "c5d53ff0-d734-4dde-a3a4-9d918cfb180f",
+                "uuid": "5301a138-29ee-4d94-b9c0-a9df0f3b63d4",
                 "control-id": "req-3.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20027,7 +20027,7 @@
                 ]
               },
               {
-                "uuid": "87f97abe-95cc-4380-b5fb-b218d07d24d2",
+                "uuid": "d6ff2125-24aa-4ec4-819b-e6d36e2759a9",
                 "control-id": "req-3.2.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20040,7 +20040,7 @@
                 ]
               },
               {
-                "uuid": "4ef33982-8e75-432d-ae2a-014fdf390b90",
+                "uuid": "35e81c39-792c-45c3-8f2f-ace73e56be32",
                 "control-id": "req-3.2.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20053,7 +20053,7 @@
                 ]
               },
               {
-                "uuid": "e119a348-d4b0-4afd-8c93-f65018f9f758",
+                "uuid": "fcf2a322-e1a9-4e3d-bd70-8b9c3b15a6e4",
                 "control-id": "req-3.2.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20066,7 +20066,7 @@
                 ]
               },
               {
-                "uuid": "7303c36b-6a9b-462d-989c-c55baa0443ec",
+                "uuid": "c6f0d03e-aea2-4751-891e-bf13a3ab9db5",
                 "control-id": "req-3.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20079,7 +20079,7 @@
                 ]
               },
               {
-                "uuid": "79c08148-4dcb-492d-8d84-25d41d908069",
+                "uuid": "cf0e9a94-f941-4e15-a8a5-e15a049c8706",
                 "control-id": "req-3.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20092,7 +20092,7 @@
                 ]
               },
               {
-                "uuid": "13d5f7d1-3603-42de-98cb-d3928206b3fe",
+                "uuid": "91ed4b7e-0459-4edf-81ae-ffdda89b359c",
                 "control-id": "req-3.4.1",
                 "description": "In case where card holder data may be stored on worker nodes disks, OpenShift Container Platform can help to partially\ncomply with this requirement by providing several means of fully encrypting disks.\n* Using RHEL core crypto components which are FIPS certified\n* Or using cloud provider techniques, such as EBS encryption for AWS case.\nFor this requirement, we also check etcd is encrypted, so that secrets, but also routes and oauth configurations are secured.\n\nConcerning Full Disk Encryption:\nFull Disk Encryption can be enabled on OpenShift by installing the cluster with FIPS mode enabled.\nOpenShift Container Platform uses certain FIPS Validated / Modules in Process modules within RHEL and RHCOS\nfor the operating system components that it uses.\nSee RHEL7 core crypto components and https://docs.openshift.com/container-platform/4.9/installing/installing-fips.html for further information.\nWhen installing the cluster, The public ssh key is passed to the Red Hat Enterprise Linux CoreOS (RHCOS) nodes through their Ignition config\nfiles and is used to authenticate SSH access to the nodes. The key is added to the ~/.ssh/authorized_keys list for the core user\non each node, which enables password-less authentication.\nThe management of the private key is up to the customer.\nLUKS/dm-crypt (used by the FIPS mode) provides full-disk encryption that fulfills Req-3.4.1.\nAccess to the stored data is only possible via a decryption password that must be entered when the disk is mounted (must be somehow\nrelated to the ssh keypair?...).\nThe decryption password is stored using TPM v2, in a secure cryptoprocessor contained within a server.\nWhen enabling FIPS mode, machine configs state that encryption using TPM based pinning in clevis is requested for these nodes.",
                 "props": [
@@ -20119,7 +20119,7 @@
                 ]
               },
               {
-                "uuid": "6bbff230-1960-43de-a4a7-e4023d34a5f4",
+                "uuid": "1f5416a8-ff15-4f62-9725-8c16b492237c",
                 "control-id": "req-3.5.1",
                 "description": "This requirement largely depends on the solution chosen by the customer to protect card holder data at rest.\n* When Full Disk Encryption is done using AWS EBS encryption, the algorithm used is AES-256.\n  Your data key is stored on disk with your encrypted data, but not before EBS encrypts it with your KMS key.\n  Your data key never appears on disk in plaintext.\n  The same data key is shared by snapshots of the volume and any subsequent volumes created from those snapshots.\n  See https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html\n* When Full Disk Encryption is done using LUKS with TPM2,full disk encryption utilities such as dm-crypt and\n  BitLocker encrypt disks with a TPM bind key, and then store the TPM bind key in the TPM (Trusted Platform Module),\n  which is a secure element attached to the motherboard of the node.\n  The main benefit of this method is that there is no external dependency, and the node is able to decrypt its own\n  disks at boot time without any external interaction.\n* When Full Disk Encryption is done using LUKS with Tang, the booting node attempts to contact a predefined set\n  of Tang servers by performing a cryptographic handshake. If it can reach the required number of Tang servers,\n  the node can construct its disk decryption key and unlock the disks to continue booting.\nSee https://docs.openshift.com/container-platform/4.9/security/network_bound_disk_encryption/nbde-about-disk-encryption-technology.html",
                 "props": [
@@ -20131,7 +20131,7 @@
                 ]
               },
               {
-                "uuid": "3c9e89d8-e0b3-46be-b19e-86deb2ac1de5",
+                "uuid": "7b2fda52-7d5b-4b76-8d3e-7d4157db0d10",
                 "control-id": "req-3.5.2",
                 "description": "This requirement largely depends on the solution chosen by the customer to protect card holder data at rest.\n* When Full Disk Encryption is done using AWS EBS encryption, the data key, used for volume encryption, is generated\n  by AWS KMS, encrypted with the Key Encryption Key that lies in the KMS and stored with the volume metadata, by EBS.\n  It is the payment entity's responsibility to limit the access to this key by ensuring that Grant requests to decrypt\n  the data key using the KEK (Key Encryption Key) is given only to the need to know users or AWS resources.\n  See https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html\n* When Full Disk Encryption is done using LUKS with TPM2, the TPM bind key, which is used to decrypt the data key is\n  stored in the TPM (Trusted Platform Module), on the motherboard of the node.\n  It is therefore not shared with anyone.\n* When Full Disk Encryption is done using LUKS with Tang, Tang server does not store the encryption key directly,\n  and never interacts with it. The metadata needed to decrypt the volume is stored on the disk but can only be\n  unlocked and used when the node can correctly establish the handshake with the Tang server.\n  The data key is therefore not shared with anyone.",
                 "props": [
@@ -20143,7 +20143,7 @@
                 ]
               },
               {
-                "uuid": "71a76989-1b64-4905-9fbb-4d49ea5bd0f9",
+                "uuid": "c43e20fa-25ef-48bb-b44a-9ef01fd5f3f7",
                 "control-id": "req-3.5.3",
                 "description": "This requirement depends on the solution chosen by the customer to protect card holder data at rest:\n* When Full Disk Encryption is done using AWS EBS encryption, the data key is encrypted with a  Key Encryption Key\n  that is stored in the AWS KMS, separately from the data key.\n* When Full Disk Encryption is done using LUKS with TPM2, the TPM bind key, which is used to decrypt the data key is\n  stored in the TPM (Trusted Platform Module), on the motherboard of the node.\n* When Full Disk Encryption is done using LUKS with Tang, the encryption key is not stored to disk. Only the provisioning\n  metadata is. A POST to the Tang server would allow the node to recompute the encryption key from this metadata.\n  See https://github.com/latchset/tang",
                 "props": [
@@ -20155,7 +20155,7 @@
                 ]
               },
               {
-                "uuid": "1ba6547e-7eda-4902-826f-f77afadee929",
+                "uuid": "a3caeb8f-90c3-4282-a2ca-2a64b5585b7a",
                 "control-id": "req-3.5.4",
                 "description": "This requirement depends on the solution chosen by the customer to protect card holder data at rest:\n* When Full Disk Encryption is done using AWS EBS encryption, the data key is stored in the volume's metadata only.\n  The KEK is stored in the AWS KMS only.\n* When Full Disk Encryption is done using LUKS with TPM2, the TPM bind key is stored in the TPM (Trusted Platform Module) only.\n  The encrypted data key is stored on the MBR of the disk only.\n* When Full Disk Encryption is done using LUKS with Tang, the encryption key is not stored to disk. Only the provisioning\n  metadata is. A POST to the Tang server would allow the node to recompute the encryption key from this metadata.\n  See https://github.com/latchset/tang",
                 "props": [
@@ -20167,7 +20167,7 @@
                 ]
               },
               {
-                "uuid": "04f21eee-a5b1-4863-a436-6875abcfe590",
+                "uuid": "1441c02a-3d3a-409c-8af9-af491372284c",
                 "control-id": "req-3.6.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20179,7 +20179,7 @@
                 ]
               },
               {
-                "uuid": "e1e64a6b-af9b-4f27-8542-d4e22c944a3c",
+                "uuid": "b690a360-bcf2-49e6-bc34-168ef92110a0",
                 "control-id": "req-3.6.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20192,7 +20192,7 @@
                 ]
               },
               {
-                "uuid": "5dc39534-500d-4bf5-80c7-21e77d44d5c0",
+                "uuid": "771fc1a2-5ab2-4d05-8532-cb122d058fa2",
                 "control-id": "req-3.6.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20205,7 +20205,7 @@
                 ]
               },
               {
-                "uuid": "a34b5cd0-b273-440e-bb81-f277c0345d35",
+                "uuid": "aabd23a9-8d8a-4bf7-8176-5aaec2ec25b4",
                 "control-id": "req-3.6.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20218,7 +20218,7 @@
                 ]
               },
               {
-                "uuid": "3d211909-7615-4e05-b115-abf5ec917fbc",
+                "uuid": "b5147938-3daf-40ed-b7f9-c275e8160235",
                 "control-id": "req-3.6.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20231,7 +20231,7 @@
                 ]
               },
               {
-                "uuid": "1f35e7f8-bcc8-454e-9ed4-4814e64bcf35",
+                "uuid": "6d88e6fd-39a8-4817-94f3-b797406421b0",
                 "control-id": "req-3.6.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20244,7 +20244,7 @@
                 ]
               },
               {
-                "uuid": "41f39e8f-85e2-4645-a05c-69578812bcbd",
+                "uuid": "2e5fa008-328e-47c1-a52a-4bb7800bfc58",
                 "control-id": "req-3.6.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20257,7 +20257,7 @@
                 ]
               },
               {
-                "uuid": "84ecd209-25c5-4c7a-80f7-b85c9f112f45",
+                "uuid": "7de0f545-5da0-4d9a-94a4-e83c6ce950a6",
                 "control-id": "req-3.6.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20270,7 +20270,7 @@
                 ]
               },
               {
-                "uuid": "0adc21b9-05b5-4fa9-afde-3e957ae2f666",
+                "uuid": "dc28d4e6-bc1c-4cb5-8609-e20e48b91046",
                 "control-id": "req-3.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20283,7 +20283,7 @@
                 ]
               },
               {
-                "uuid": "57d9e28f-ee41-4208-9b13-4acfd3501936",
+                "uuid": "d4ae38f3-9ac3-45aa-89e2-813ec9843a75",
                 "control-id": "req-4.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20320,7 +20320,7 @@
                 ]
               },
               {
-                "uuid": "b8d48549-0b2e-4c2e-a90e-8b9973138679",
+                "uuid": "09a70eb6-5e65-4abd-bfb6-a5034926e309",
                 "control-id": "req-4.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20333,7 +20333,7 @@
                 ]
               },
               {
-                "uuid": "d7d1bfd5-f1b3-4776-bd69-639bf6653531",
+                "uuid": "139b5c45-f5d0-49b9-ba7d-236ba0bb7ca7",
                 "control-id": "req-4.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20346,7 +20346,7 @@
                 ]
               },
               {
-                "uuid": "542f2d04-4638-446a-9221-40d8785724eb",
+                "uuid": "34112486-d5fe-46e2-b7f2-dac0389b8929",
                 "control-id": "req-4.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20359,7 +20359,7 @@
                 ]
               },
               {
-                "uuid": "0260000d-e057-4596-ae0a-4cf963893af7",
+                "uuid": "af4edd52-3ba9-47ea-88e4-088c831a982b",
                 "control-id": "req-5.1.1",
                 "description": "OpenShift container platforms may install the OpenShift File\nIntegrity Operator [1] which monitors file system integrity on the host.\nThis may allow for the detection of threats on the hosts which attempt\nto modify the file system in malicious ways. Additionally, there exist\nseveral solutions to scan for container vulnerabilities which are indispensible\nfrom any deployment. One such example is Red Hat Quay [2] which supports\nimage verification and continuous security scanning of container images.\n\n[1] https://docs.openshift.com/container-platform/latest/security/file_integrity_operator/file-integrity-operator-understanding.html\n[2] https://docs.openshift.com/container-platform/latest/security/container_security/security-registries.html",
                 "props": [
@@ -20376,7 +20376,7 @@
                 ]
               },
               {
-                "uuid": "f12cfac5-70cc-4395-ad62-bf7e033f7b22",
+                "uuid": "45bf1fd5-4d89-42ea-bc25-55bf4bdf1a1c",
                 "control-id": "req-5.1.2",
                 "description": "Red Hat Product Security constantly tracks threats to the OpenShift Container\nPlatform to ensure they are addressed. Besides this they also perform\nvulnerability assessments on the platform which aid in keeping up\nwith the constantly evolving threat landscape.",
                 "props": [
@@ -20388,7 +20388,7 @@
                 ]
               },
               {
-                "uuid": "c6882440-44e3-4fda-91d0-8f42ec6d530a",
+                "uuid": "81de0542-c1a7-4b85-8c20-163812465a02",
                 "control-id": "req-5.2",
                 "description": "OpenShift container platforms may install the OpenShift File\nIntegrity Operator [1] which monitors file system integrity on the host.\nThis may allow for the detection of threats on the hosts which attempt\nto modify the file system in malicious ways. Additionally, there exist\nseveral solutions to scan for container vulnerabilities which are indispensible\nfrom any deployment. One such example is Red Hat Quay [2] which supports\nimage verification and continuous security scanning of container images.\n\n[1] https://docs.openshift.com/container-platform/latest/security/file_integrity_operator/file-integrity-operator-understanding.html\n[2] https://docs.openshift.com/container-platform/latest/security/container_security/security-registries.html",
                 "props": [
@@ -20405,7 +20405,7 @@
                 ]
               },
               {
-                "uuid": "5d9560e7-3a1e-4e03-9d59-c7aece302bb7",
+                "uuid": "d0576c9f-42de-4957-97a9-2f77b14a4f37",
                 "control-id": "req-5.3",
                 "description": "The OpenShift File Integrity Operator runs on a namespace prepended with\nthe `openshift-` prefix. Such namespaces are only accessible by system\nadministrators. Users require explicit roles to access the namespace. On\nthe other hand, given the usage of Custom Resource Definitions, users also\nrequire explicit roles and permissions to access and modify the scan settings\nof the operator.\n\nImage registries such as Red Hat Quay also require special privileges in\norder to modify and access them. Security scanning of images may not be\nturned off.",
                 "props": [
@@ -20422,7 +20422,7 @@
                 ]
               },
               {
-                "uuid": "d7f23772-b5d2-4656-a26b-c2c568d38187",
+                "uuid": "01968007-7487-44d3-a698-6ac80d379722",
                 "control-id": "req-5.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20435,7 +20435,7 @@
                 ]
               },
               {
-                "uuid": "1fed75c6-2c1e-4f86-a008-9090f2e97f0d",
+                "uuid": "f40e2d48-c6bb-438d-b481-257b4287365b",
                 "control-id": "req-6.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20448,7 +20448,7 @@
                 ]
               },
               {
-                "uuid": "6b098b63-b196-4c70-94b4-b2cdde29d729",
+                "uuid": "1fa8aac0-84c2-44b0-98cd-ab289b56f05a",
                 "control-id": "req-6.2",
                 "description": "The OpenShift Container Platform provides the capability of updating\nboth the Kubernetes/OCP layer, as well as the Operating System (Red Hat\nCoreOS) layer in an ubiquitous manner with over-the-air updates using\nthe OpenShift Update Service (OSUS) [1]. This service can also be installed\nin clusters without internet connectivity [2].\n\n[1] https://docs.openshift.com/container-platform/latest/updating/understanding-the-update-service.html\n[2] https://docs.openshift.com/container-platform/latest/updating/installing-update-service.html",
                 "props": [
@@ -20460,7 +20460,7 @@
                 ]
               },
               {
-                "uuid": "c0c303fa-bfec-4f72-ae87-c9eea97f57cc",
+                "uuid": "75045f72-a889-4f6b-8be0-d77a4c7dbb3f",
                 "control-id": "req-6.3.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20473,7 +20473,7 @@
                 ]
               },
               {
-                "uuid": "ba2cd629-12fd-4d44-b12d-e2ed82ab9360",
+                "uuid": "3aa8265d-0112-4e04-bbef-d57ac13720ce",
                 "control-id": "req-6.3.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20486,7 +20486,7 @@
                 ]
               },
               {
-                "uuid": "49256960-6ff6-4007-8675-35b05fe2180e",
+                "uuid": "d21a580e-bdf8-49f5-8e4c-fad31c931931",
                 "control-id": "req-6.4.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20499,7 +20499,7 @@
                 ]
               },
               {
-                "uuid": "7a54a338-1d4e-44eb-b567-4cd6d8114d9d",
+                "uuid": "f1f767c5-d9ce-4340-865f-2b9b324e152a",
                 "control-id": "req-6.4.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20512,7 +20512,7 @@
                 ]
               },
               {
-                "uuid": "2e96d5d0-749e-475b-b73a-e10e7e251f13",
+                "uuid": "ac20f628-7153-41ff-a396-45deed400f9b",
                 "control-id": "req-6.4.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20525,7 +20525,7 @@
                 ]
               },
               {
-                "uuid": "91f4c806-0772-417a-a16f-af17d154e753",
+                "uuid": "5e55d386-ef96-41d7-8120-d3407b1e4718",
                 "control-id": "req-6.4.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20538,7 +20538,7 @@
                 ]
               },
               {
-                "uuid": "90b96dff-2369-41ea-a53f-b14849727ba8",
+                "uuid": "c06831aa-ae88-480b-b8fa-a67af8d6c733",
                 "control-id": "req-6.4.5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20551,7 +20551,7 @@
                 ]
               },
               {
-                "uuid": "002be3c6-7e2c-4889-bd22-b80c60f8fa3b",
+                "uuid": "4f65485b-f1a0-495e-8573-2c370f08f797",
                 "control-id": "req-6.4.5.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20564,7 +20564,7 @@
                 ]
               },
               {
-                "uuid": "022ba557-830a-46d8-83bc-56961aba8e9a",
+                "uuid": "378e1b9f-a65b-4d7c-bd19-0012618d0e74",
                 "control-id": "req-6.4.5.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20577,7 +20577,7 @@
                 ]
               },
               {
-                "uuid": "be62974a-6db3-435b-9f15-22d3564c955a",
+                "uuid": "1d6ce056-d555-423f-a47e-85362182a17b",
                 "control-id": "req-6.4.5.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20590,7 +20590,7 @@
                 ]
               },
               {
-                "uuid": "3592176d-c456-42e2-83ec-e29765e7ee31",
+                "uuid": "1b904b0d-90c4-426e-abfd-f820cb35e47b",
                 "control-id": "req-6.4.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20603,7 +20603,7 @@
                 ]
               },
               {
-                "uuid": "0536e709-5705-451c-914a-98fc329d2612",
+                "uuid": "dcbe9d66-450e-46ca-b73a-c889c241ae37",
                 "control-id": "req-6.5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20616,7 +20616,7 @@
                 ]
               },
               {
-                "uuid": "1ff25094-a538-4d41-b125-d7042039528e",
+                "uuid": "9b818de1-0984-462a-9d04-9f0235d01c10",
                 "control-id": "req-6.5.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20629,7 +20629,7 @@
                 ]
               },
               {
-                "uuid": "9369cc70-fb76-4f3e-9470-132cbae8d01b",
+                "uuid": "26985f54-3905-4679-83f3-29a738b39828",
                 "control-id": "req-6.5.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20642,7 +20642,7 @@
                 ]
               },
               {
-                "uuid": "5cf4a647-cf87-4b6a-8af7-5a7ce0c0f327",
+                "uuid": "e3346e9a-cd2c-46e6-b52d-a0e13e84821c",
                 "control-id": "req-6.5.4",
                 "description": "This is an organizational control, and thus it's in the payment\nentity's responsibility to follow best secure development practices\nwhen developing applications on top of the OpenShift Container Platform.\n\nHowever, OpenShift does provide tools that can help ensure that\nsecure communications are in place. e.g. OpenShift Routes\ncan easily enforce TLS is enabled for that specific endpoint.",
                 "props": [
@@ -20659,7 +20659,7 @@
                 ]
               },
               {
-                "uuid": "d130a0f5-bb35-41f3-a316-80486c0977c6",
+                "uuid": "7fd9ad87-7f4f-4f48-bc6b-6060f1fd6f5c",
                 "control-id": "req-6.5.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20672,7 +20672,7 @@
                 ]
               },
               {
-                "uuid": "d5a37e5c-633f-448f-8233-3e9e9fe04800",
+                "uuid": "066514f1-9b38-47e0-9049-a3eca9b163bc",
                 "control-id": "req-6.5.6",
                 "description": "Red Hat Product Security publishes a list of known vulnerabilities that\nallow organizations to measure their security posture and evaluate if\ntheir platform and base images are appropriately patched.",
                 "props": [
@@ -20684,7 +20684,7 @@
                 ]
               },
               {
-                "uuid": "1453d8a2-e7be-4d04-bcc7-a01eff7a6780",
+                "uuid": "7c702b20-8562-4d70-a865-8958e90885d9",
                 "control-id": "req-6.5.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20697,7 +20697,7 @@
                 ]
               },
               {
-                "uuid": "7de174b1-357b-4eaa-94f8-ef01d4648704",
+                "uuid": "db1fc066-3c46-485c-b63f-d8a560719fff",
                 "control-id": "req-6.5.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20710,7 +20710,7 @@
                 ]
               },
               {
-                "uuid": "f1f5b7b3-6da5-46c6-895c-c0979b7025ca",
+                "uuid": "b9c46cf0-342d-4ccc-9ba2-963605a291ac",
                 "control-id": "req-6.5.9",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20723,7 +20723,7 @@
                 ]
               },
               {
-                "uuid": "0fa7999b-fd6a-40e7-9855-0fe5c92021a3",
+                "uuid": "e15e6efe-0f1c-448e-a37e-afe139516fc3",
                 "control-id": "req-6.5.10",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20736,7 +20736,7 @@
                 ]
               },
               {
-                "uuid": "5e745e55-8f1d-49f9-a7d8-fa7f7e9d7500",
+                "uuid": "517149ec-384f-4815-b505-7ec213ad9cc1",
                 "control-id": "req-6.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20749,7 +20749,7 @@
                 ]
               },
               {
-                "uuid": "aaed929e-493d-4c31-bdd9-522849b25470",
+                "uuid": "57b8f25a-dc0a-433d-b888-c89917d37d7d",
                 "control-id": "req-6.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20762,7 +20762,7 @@
                 ]
               },
               {
-                "uuid": "3c4c8cfe-e213-4258-bf37-5645045933e4",
+                "uuid": "b1b56cd9-7c22-4672-ae46-e0a59b70774d",
                 "control-id": "req-7.1.1",
                 "description": "The OpenShift Container Platform comes with the Kubernetes RBAC\nfeature enabled by default. This feature ensures that only if a\nuser or a system account has the appropriate permission, it's able\nto operate on specific system objects. By reviewing the existing\nRole and ClusterRole objects, one is able to see the resources\nthat are accessible for a certain role, as well as the \"verbs\" or\noperations that the role can execute on that resource.",
                 "props": [
@@ -20784,7 +20784,7 @@
                 ]
               },
               {
-                "uuid": "370d6e23-534c-4ce5-b6ac-1e44d68bc2f2",
+                "uuid": "c2af6621-e594-4d50-80a1-ecc07b035e87",
                 "control-id": "req-7.1.2",
                 "description": "The OpenShift Container Platform contains a ClusterRole called `cluster-admin`\nthis role is allowed to do anything in the system. It is recommended to monitor\nthe usage of this ClusterRole to prevent misuse.",
                 "props": [
@@ -20801,7 +20801,7 @@
                 ]
               },
               {
-                "uuid": "274307b2-21de-4605-ba70-68b85a664405",
+                "uuid": "aec191b0-49ea-472a-8821-a4321ad109b6",
                 "control-id": "req-7.1.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20814,7 +20814,7 @@
                 ]
               },
               {
-                "uuid": "8be541b3-2cf5-42b3-82ec-46f77d3ee300",
+                "uuid": "adfa141b-72fa-4692-843a-d4cca83466e7",
                 "control-id": "req-7.1.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20827,7 +20827,7 @@
                 ]
               },
               {
-                "uuid": "bbbd8d83-eed3-4286-abb1-74d5760c6fce",
+                "uuid": "daa68498-13db-4e1d-a677-b3855a25be70",
                 "control-id": "req-7.2.1",
                 "description": "The OpenShift Container Platform has RBAC enabled by default. With this\nfeature, any requests to the API is denied unless an explicit\nRole or ClusterRule is bound to the entity making the request.\n\nAll objects in Kubernetes/OpenShift are bound to RBAC permissions.",
                 "props": [
@@ -20839,7 +20839,7 @@
                 ]
               },
               {
-                "uuid": "195eaed0-11a8-4089-bf9d-ce549d00a4b5",
+                "uuid": "23c1ce97-1806-4192-aac3-782606840e05",
                 "control-id": "req-7.2.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20852,7 +20852,7 @@
                 ]
               },
               {
-                "uuid": "a38c983c-d3d1-4c55-8c19-40197d773a73",
+                "uuid": "c93bbb78-9733-41ee-a482-d2ed8a473806",
                 "control-id": "req-7.2.3",
                 "description": "The OpenShift Container Platform has RBAC enabled by default. With this\nfeature, any requests to the API is denied unless an explicit\nRole or ClusterRule is bound to the entity making the request.",
                 "props": [
@@ -20864,7 +20864,7 @@
                 ]
               },
               {
-                "uuid": "5c6a3884-6565-47d4-9459-753440c3d242",
+                "uuid": "5b0312a8-212d-416a-a0e0-73f8a423cad2",
                 "control-id": "req-7.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20877,7 +20877,7 @@
                 ]
               },
               {
-                "uuid": "359e021a-6070-41be-9655-3ba32da19c0c",
+                "uuid": "53c752b7-aa83-4425-ac49-e21f71325eaf",
                 "control-id": "req-8.1.1",
                 "description": "Openshift should be configured to work with an external third-party\nidentity provider, through the payment entity’s chosen identity\nand authentication provider, unique identifiers can be setup\nfor each user prior to allowing the user to  access components\nof the OpenShift environment. The third party identity provider\ncheck applies to all sub section within 8.1",
                 "props": [
@@ -20894,7 +20894,7 @@
                 ]
               },
               {
-                "uuid": "71e0a294-070a-416c-9294-87559a14e793",
+                "uuid": "ff45ad1a-7c0a-4434-9292-e672039e72d3",
                 "control-id": "req-8.1.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20907,7 +20907,7 @@
                 ]
               },
               {
-                "uuid": "7e0209c2-d734-4ad4-a4a2-82d2e90e0fac",
+                "uuid": "19848ab1-a973-44fb-9eab-58518496bc44",
                 "control-id": "req-8.1.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20920,7 +20920,7 @@
                 ]
               },
               {
-                "uuid": "3c668c8b-2c0d-4699-98db-99168cda0d23",
+                "uuid": "f0ba2dde-9de9-4eb8-8b62-3e3fffd8bbaa",
                 "control-id": "req-8.1.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20933,7 +20933,7 @@
                 ]
               },
               {
-                "uuid": "3cffd22d-e02b-4439-904d-556999809955",
+                "uuid": "2b94ee8e-2d06-42b7-802e-501b0de94d74",
                 "control-id": "req-8.1.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20946,7 +20946,7 @@
                 ]
               },
               {
-                "uuid": "ee35a3aa-cab9-406a-953d-d5f00e9ecc0f",
+                "uuid": "3f441676-7087-4c57-a210-473ae584a8f7",
                 "control-id": "req-8.1.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20959,7 +20959,7 @@
                 ]
               },
               {
-                "uuid": "64b49bb4-f261-41d8-b579-bf463dce9511",
+                "uuid": "13fb545f-13e9-400d-a0c4-5c49e0496e78",
                 "control-id": "req-8.1.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20972,7 +20972,7 @@
                 ]
               },
               {
-                "uuid": "d70dc2a2-8261-4b07-8c3a-189fc4f9d29b",
+                "uuid": "4552b0c7-abfb-412c-9969-ff5ad7d83b0d",
                 "control-id": "req-8.1.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20985,7 +20985,7 @@
                 ]
               },
               {
-                "uuid": "1e33dd1c-7dc1-4cc4-9fb5-8470f3c43c16",
+                "uuid": "408a9f53-86b8-4c2d-9b69-c1147caac4aa",
                 "control-id": "req-8.2.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -20998,7 +20998,7 @@
                 ]
               },
               {
-                "uuid": "6ed6be30-3b7b-45d6-83c0-874599d2fc7d",
+                "uuid": "8e397f20-b5a4-4a9a-95be-ab0d9d5095e0",
                 "control-id": "req-8.2.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21011,7 +21011,7 @@
                 ]
               },
               {
-                "uuid": "6643d12e-520c-4818-b894-7c75ed9b5c54",
+                "uuid": "20f80f36-86ec-4ec6-83d8-9e99502bed7c",
                 "control-id": "req-8.2.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21024,7 +21024,7 @@
                 ]
               },
               {
-                "uuid": "adc494ef-f572-42f0-b490-a1fc9b45b008",
+                "uuid": "bcc23356-dfc3-4660-ab54-c142cfc0ce1d",
                 "control-id": "req-8.2.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21037,7 +21037,7 @@
                 ]
               },
               {
-                "uuid": "83ff2d60-8aa9-4e98-a114-a4d599c521a1",
+                "uuid": "4631ce61-9f6e-49e1-86a5-baba995b9221",
                 "control-id": "req-8.2.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21050,7 +21050,7 @@
                 ]
               },
               {
-                "uuid": "795055a5-765a-4400-bfd0-83d33fa766e9",
+                "uuid": "f8fa3782-428b-4788-b154-fc24eeb835f2",
                 "control-id": "req-8.2.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21063,7 +21063,7 @@
                 ]
               },
               {
-                "uuid": "bb98ca11-a4f4-41c9-9808-ebb353b80620",
+                "uuid": "760b5885-581a-4bb0-9bd8-175c5bc2b06f",
                 "control-id": "req-8.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21076,7 +21076,7 @@
                 ]
               },
               {
-                "uuid": "c41b5661-c3a2-46db-a005-3184b9c9f588",
+                "uuid": "049d17bb-9bcd-4307-9ba9-ad3b7654352d",
                 "control-id": "req-8.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21089,7 +21089,7 @@
                 ]
               },
               {
-                "uuid": "65c028eb-3485-4fb3-aab1-c4138598f12a",
+                "uuid": "05688dd6-2262-41a6-8887-6fe789d42928",
                 "control-id": "req-8.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21102,7 +21102,7 @@
                 ]
               },
               {
-                "uuid": "f94150bc-ab96-49f0-a9b6-1da64d840db3",
+                "uuid": "9aaaf4cc-63e0-4a77-95a5-afc66eb32e34",
                 "control-id": "req-8.5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21115,7 +21115,7 @@
                 ]
               },
               {
-                "uuid": "8c3506bd-7fd2-44c4-b8ab-694a012a71b8",
+                "uuid": "60303beb-501a-4f5f-a86d-e6a5ebb6c688",
                 "control-id": "req-8.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21128,7 +21128,7 @@
                 ]
               },
               {
-                "uuid": "f1243323-956d-4f50-bc46-ca8b62cd6213",
+                "uuid": "309ba388-2681-491c-8e09-02d14acaec68",
                 "control-id": "req-8.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21141,7 +21141,7 @@
                 ]
               },
               {
-                "uuid": "686d12f4-b11b-4406-ad20-5937f970fa23",
+                "uuid": "58d9ddfb-f139-42ab-8f15-ad4c53e7c4fd",
                 "control-id": "req-8.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21154,7 +21154,7 @@
                 ]
               },
               {
-                "uuid": "72084320-4108-4e95-8b9a-9ccc4c9929a8",
+                "uuid": "58ca09a2-7964-4b8d-bd5f-a258b7dfcc39",
                 "control-id": "req-9.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21167,7 +21167,7 @@
                 ]
               },
               {
-                "uuid": "4305bb10-9f69-43d7-acfe-d2966443ab50",
+                "uuid": "dac6781d-fb7f-4437-b6e7-ce9d451f56c2",
                 "control-id": "req-9.1.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21180,7 +21180,7 @@
                 ]
               },
               {
-                "uuid": "5a3b3bb5-036b-4b79-b60a-6d096198ece2",
+                "uuid": "d443866f-913b-4e0b-855f-455ef6b4d7c2",
                 "control-id": "req-9.1.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21193,7 +21193,7 @@
                 ]
               },
               {
-                "uuid": "33013aed-7d92-4da5-87c9-3f8063826afd",
+                "uuid": "a4b0be90-1698-4a31-89a8-47afba037dfd",
                 "control-id": "req-9.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21206,7 +21206,7 @@
                 ]
               },
               {
-                "uuid": "759225c3-2525-47c2-9161-69e728c651a3",
+                "uuid": "1f4677fb-a73f-49ba-8b3f-993a2506b624",
                 "control-id": "req-9.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21219,7 +21219,7 @@
                 ]
               },
               {
-                "uuid": "d94c1abd-a8d1-4ca0-9b09-7e3ea0a5948a",
+                "uuid": "e8d2a5b9-b3c9-4616-85f3-7539f8d15e1f",
                 "control-id": "req-9.4.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21232,7 +21232,7 @@
                 ]
               },
               {
-                "uuid": "8c492456-f888-47a8-99c4-f9dd734c8164",
+                "uuid": "d41f5056-7e61-425d-b59f-17584e8580c0",
                 "control-id": "req-9.4.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21245,7 +21245,7 @@
                 ]
               },
               {
-                "uuid": "a8028088-57c7-49ee-90c1-8f9c833a1d73",
+                "uuid": "622345cb-a73b-424a-9e38-3efa3a3dca23",
                 "control-id": "req-9.4.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21258,7 +21258,7 @@
                 ]
               },
               {
-                "uuid": "8ff82ea8-1282-49d7-984c-f5fe3eec418d",
+                "uuid": "c74ee077-34c3-4ebd-978a-79599d908a90",
                 "control-id": "req-9.4.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21271,7 +21271,7 @@
                 ]
               },
               {
-                "uuid": "5105da51-3e2a-438c-9e42-2a744937a47d",
+                "uuid": "a39a80fe-bb09-4f7d-8005-e52170443fc2",
                 "control-id": "req-9.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21284,7 +21284,7 @@
                 ]
               },
               {
-                "uuid": "0e4f93eb-c50c-4aad-87fd-3ada81fe63db",
+                "uuid": "19e30c77-8a5b-497d-a34d-df2e9a533193",
                 "control-id": "req-9.5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21297,7 +21297,7 @@
                 ]
               },
               {
-                "uuid": "90c87a10-4ede-40ba-8be8-f7492787e36c",
+                "uuid": "9ea85111-a3b9-4347-8209-75128c75b4d7",
                 "control-id": "req-9.6.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21310,7 +21310,7 @@
                 ]
               },
               {
-                "uuid": "dae64677-29d1-450e-8139-8af46a779608",
+                "uuid": "8d3bce30-ebf2-4d8f-b48d-6312f1a4d09c",
                 "control-id": "req-9.6.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21323,7 +21323,7 @@
                 ]
               },
               {
-                "uuid": "08886d97-db31-45cc-a21f-4e637ffb7ebe",
+                "uuid": "5ece910c-49e9-4d34-913d-355f1e8662d1",
                 "control-id": "req-9.6.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21336,7 +21336,7 @@
                 ]
               },
               {
-                "uuid": "75ccdd9d-fe72-4a9b-b60a-10159f505775",
+                "uuid": "d836b6d4-0367-42f5-8511-7c9416865929",
                 "control-id": "req-9.7.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21349,7 +21349,7 @@
                 ]
               },
               {
-                "uuid": "4b7ce974-b652-432b-af36-f17a39951f44",
+                "uuid": "cc18a7e6-ddb6-440a-a6b6-38311ac1fb1c",
                 "control-id": "req-9.8.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21362,7 +21362,7 @@
                 ]
               },
               {
-                "uuid": "ec098b3a-5c70-4276-8903-0d86cfff64fc",
+                "uuid": "a1930152-93f2-4d32-b6da-9a5d40146a17",
                 "control-id": "req-9.8.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21375,7 +21375,7 @@
                 ]
               },
               {
-                "uuid": "3207d606-0ab1-49c8-962e-e91cfec9b91b",
+                "uuid": "c111676b-9f80-4fbc-b139-c7e403be5d42",
                 "control-id": "req-9.9.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21388,7 +21388,7 @@
                 ]
               },
               {
-                "uuid": "06a8c7d9-fd53-4c39-b1ec-75d40d4309e9",
+                "uuid": "3c2f1331-599b-4d77-854e-083bbdfdca18",
                 "control-id": "req-9.9.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21401,7 +21401,7 @@
                 ]
               },
               {
-                "uuid": "5da950c3-8d95-4284-95ef-92376fcda7e1",
+                "uuid": "0b4a3064-780b-4458-a8be-a43e9ca674db",
                 "control-id": "req-9.9.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21414,7 +21414,7 @@
                 ]
               },
               {
-                "uuid": "1b63ab01-5c74-4f63-992e-32f1560b0fe2",
+                "uuid": "83c443b5-2c5d-45d4-89a9-d7b5e6aabd7a",
                 "control-id": "req-9.10",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21427,7 +21427,7 @@
                 ]
               },
               {
-                "uuid": "260da96e-35c7-464e-a398-00b871ba49f8",
+                "uuid": "d45dddf9-66ab-4899-bf9c-c50ca3371385",
                 "control-id": "req-10.1",
                 "description": "All actions taken by users of OpenShift are logged and capable of being used to satisfy audit requirements.",
                 "props": [
@@ -21439,7 +21439,7 @@
                 ]
               },
               {
-                "uuid": "506ba866-ebea-4892-97e4-8ef503be2b38",
+                "uuid": "4eef66eb-cda4-4408-9e31-8920f15992f5",
                 "control-id": "req-10.2.1",
                 "description": "All user and/or service account accesses to OpenShift components are logged. The payment entity would be responsible for enabling logging for access to applications within workloads hosted in containers in OpenShift.",
                 "props": [
@@ -21451,7 +21451,7 @@
                 ]
               },
               {
-                "uuid": "401cc883-3079-4d3d-805d-e35a64e3e1f7",
+                "uuid": "eb3cf668-2a0d-4e66-a758-2eb2e0fa9175",
                 "control-id": "req-10.2.2",
                 "description": "All actions taken by individual with root or administrative privileges to OpenShift and Red Hat CoreOS are logged.",
                 "props": [
@@ -21463,7 +21463,7 @@
                 ]
               },
               {
-                "uuid": "6e41257e-a540-4677-b379-4d81cc3a832c",
+                "uuid": "8843fd0d-439d-4c87-977b-e1d91bc8ce3c",
                 "control-id": "req-10.2.3",
                 "description": "Access to audit trails relative to OpenShift are made available at the OS level with administrator accounts. Red Hat CoreOS can be configured to log access to the journal or log file. For better protection of audit trails, including improved access controls, it is recommended to direct logs to an external log server or Security Information Event Management (SIEM) solution.",
                 "props": [
@@ -21475,7 +21475,7 @@
                 ]
               },
               {
-                "uuid": "0499b023-6746-48f4-a6bd-476a1021f760",
+                "uuid": "c4adb0ba-e91c-4466-a377-b613b99dba7e",
                 "control-id": "req-10.2.4",
                 "description": "Invalid logical access attempts pertaining to incorrect input of credentials would be handled by the payment entity’s chosen identity provider. Unauthorized attempts to access system components or run unauthorized commands against OpenShift are logged.",
                 "props": [
@@ -21487,7 +21487,7 @@
                 ]
               },
               {
-                "uuid": "298cde4c-8e41-4010-b66e-eabc6756076e",
+                "uuid": "52ae636c-9ea0-4912-9e61-c1eac1dad1f5",
                 "control-id": "req-10.2.5",
                 "description": "Like 10.2.4, changes to identification and authentication mechanisms would be handled by the payment entity’s chosen identity provider. Changes that are made to RBAC within OpenShift are logged. These logged events may be an indication of attempts to modify defined roles to grant additional privileges.",
                 "props": [
@@ -21499,7 +21499,7 @@
                 ]
               },
               {
-                "uuid": "1264b60d-3117-47fe-96f6-b256b12a104b",
+                "uuid": "4a7d6412-575e-4b8d-921e-7971364d510b",
                 "control-id": "req-10.2.6",
                 "description": "Stopping the mechanisms for log creation in OpenShift requires stopping the OpenShift Control Plane itself, which would have the effect of preventing any further access for any users to the API, CLI, or Web UI. Auditing within OpenShift cannot be reconfigured or stopped without reconfiguring OpenShift. Any attempt to reconfigure OpenShift will be logged.",
                 "props": [
@@ -21511,7 +21511,7 @@
                 ]
               },
               {
-                "uuid": "bb03d3b8-b721-42ac-a23c-a3fb02b33b4a",
+                "uuid": "b157c434-e456-461e-a90b-66d2af7f53b4",
                 "control-id": "req-10.2.7",
                 "description": "Creation and deletion of system levels objects is logged by OpenShift (for OpenShift objects) and by Red Hat CoreOS.",
                 "props": [
@@ -21523,7 +21523,7 @@
                 ]
               },
               {
-                "uuid": "a675df47-f07a-42a5-b3c6-5d6774829f83",
+                "uuid": "717670f8-99b4-4012-b9da-a6cf53bf29d7",
                 "control-id": "req-10.3.1",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include user identification.",
                 "props": [
@@ -21535,7 +21535,7 @@
                 ]
               },
               {
-                "uuid": "ea83d26c-3ce2-4f7c-ab49-de95090460fc",
+                "uuid": "49aa5b5a-7e8f-4544-87c2-5c98a8a348da",
                 "control-id": "req-10.3.2",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include the type of event.",
                 "props": [
@@ -21547,7 +21547,7 @@
                 ]
               },
               {
-                "uuid": "4cf98891-e449-4bc6-a687-57da0d47f9f8",
+                "uuid": "f8ea9f47-a5f9-4fc1-88b4-27b2df1e2a47",
                 "control-id": "req-10.3.3",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include the date and time of the event.",
                 "props": [
@@ -21559,7 +21559,7 @@
                 ]
               },
               {
-                "uuid": "3caab08b-60b8-40d4-b8d8-b0ebf655e534",
+                "uuid": "44840af3-6cd0-4a9d-ad5b-22c0fe10acc9",
                 "control-id": "req-10.3.4",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include a success or failure indication.",
                 "props": [
@@ -21571,7 +21571,7 @@
                 ]
               },
               {
-                "uuid": "4f2ab2c4-8006-42a7-9f34-4659d8621750",
+                "uuid": "a6fc468e-b3b3-49c1-b3c0-90839c73e709",
                 "control-id": "req-10.3.5",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include the origination of the event.",
                 "props": [
@@ -21583,7 +21583,7 @@
                 ]
               },
               {
-                "uuid": "f244ab02-7503-445b-b659-79daadceece4",
+                "uuid": "08995fe0-86bf-4567-9f58-8f42878b4363",
                 "control-id": "req-10.3.6",
                 "description": "The logs generated by OpenShift and Red Hat CoreOS include the identity or name of affected data, system component, or resource.",
                 "props": [
@@ -21595,7 +21595,7 @@
                 ]
               },
               {
-                "uuid": "6f2f58cc-ef80-421c-8948-ece733bb2a0f",
+                "uuid": "95a75cfd-3277-49bb-8157-483af6e8bceb",
                 "control-id": "req-10.4.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21608,7 +21608,7 @@
                 ]
               },
               {
-                "uuid": "6b791615-207b-4775-8adb-1dfce8b2884f",
+                "uuid": "f034f081-f10a-447b-9b07-a1125a66e5cc",
                 "control-id": "req-10.4.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21621,7 +21621,7 @@
                 ]
               },
               {
-                "uuid": "5aebc841-5512-4209-ad58-a2a78bd50b7e",
+                "uuid": "48a25532-1180-4ae5-afc0-fd25ed70ecb7",
                 "control-id": "req-10.4.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21634,7 +21634,7 @@
                 ]
               },
               {
-                "uuid": "72b1f574-f31d-455f-b112-3ad81ba9a39f",
+                "uuid": "d0b39f9b-a97e-4fc2-9427-a2402c07e384",
                 "control-id": "req-10.5.1",
                 "description": "It is recommended to use an external log aggregation solution or SIEM solution for securing audit trails. While the logs reside on the Red Hat CoreOS server, access can be controlled using RBAC. An external solution may be better equipped to secure audit trails in alignment with compliance requirements. RBAC controls in Red Hat CoreOS can be used to limit the ability to review audit logs and journals. An external solution may be able to provide improved granularity as well as search capability that would be of better use to the payment entity to satisfy requirements.",
                 "props": [
@@ -21651,7 +21651,7 @@
                 ]
               },
               {
-                "uuid": "041f111b-78f9-4d39-83f6-c94bea0cf67d",
+                "uuid": "a3341dd1-6c73-46f1-a523-d91542b5b125",
                 "control-id": "req-10.5.2",
                 "description": "Limited access to the audit trails on OpenShift hosts provides minimal protection from unauthorized modification. Use of an external log collector or SIEM solution may provide improved protections against unauthorized modifications by adding additional features such as file integrity monitoring, digital signing, or Write Once, Read Many (WORM) storage.",
                 "props": [
@@ -21708,7 +21708,7 @@
                 ]
               },
               {
-                "uuid": "2b6218f7-5bfe-4e5b-8025-1ef4043c0bdb",
+                "uuid": "0af9b6fb-70ef-4b83-aaf1-15157b891bb8",
                 "control-id": "req-10.5.3",
                 "description": "Limited access to the audit trails on OpenShift hosts provides minimal protection from unauthorized modification. Use of an external log collector or SIEM solution may provide improved protections against unauthorized modifications by adding additional features such as file integrity monitoring, digital signing, or Write Once, Read Many (WORM) storage.",
                 "props": [
@@ -21745,7 +21745,7 @@
                 ]
               },
               {
-                "uuid": "c78b98f2-8ff9-4898-9808-23c8d4ba8e34",
+                "uuid": "ea3a7300-b775-4276-aa07-e41ffcf60d8e",
                 "control-id": "req-10.5.4",
                 "description": "Limited access to the audit trails on OpenShift hosts provides minimal protection from unauthorized modification. Use of an external log collector or SIEM solution may provide improved protections against unauthorized modifications by adding additional features such as file integrity monitoring, digital signing, or Write Once, Read Many (WORM) storage.",
                 "props": [
@@ -21782,7 +21782,7 @@
                 ]
               },
               {
-                "uuid": "ed9f22ef-d841-4f3a-9ac5-65546490a628",
+                "uuid": "7228742f-2487-4103-b37f-a14c08240b23",
                 "control-id": "req-10.5.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21799,7 +21799,7 @@
                 ]
               },
               {
-                "uuid": "cc34d9cf-8344-4100-bc81-5ce8b4341bb5",
+                "uuid": "8cbee9f8-b094-4782-a0a7-5a7f3ac3839b",
                 "control-id": "req-10.6.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21812,7 +21812,7 @@
                 ]
               },
               {
-                "uuid": "79d59dc5-edac-4ce4-a95e-b11c168a658f",
+                "uuid": "ddaeeefd-5432-4439-9f16-3dd4322a3fd0",
                 "control-id": "req-10.6.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21825,7 +21825,7 @@
                 ]
               },
               {
-                "uuid": "73961723-9914-4829-9301-b5a567a43d6e",
+                "uuid": "82178650-2c46-4744-a73e-d5760d30f51f",
                 "control-id": "req-10.6.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21838,7 +21838,7 @@
                 ]
               },
               {
-                "uuid": "897b9fa1-3837-4dfe-9e5e-8c2152625f07",
+                "uuid": "6926188a-74d5-4e64-8db4-0b4797b58157",
                 "control-id": "req-10.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21851,7 +21851,7 @@
                 ]
               },
               {
-                "uuid": "4f308ac3-dfb1-409b-8713-6cf855c8336c",
+                "uuid": "d158e429-6832-4cd3-9438-1e90f9120472",
                 "control-id": "req-10.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21864,7 +21864,7 @@
                 ]
               },
               {
-                "uuid": "7a429f38-b1a4-4d26-a29c-47a83b217ce1",
+                "uuid": "1716b40c-8268-4ee3-afa0-fe328e0908e6",
                 "control-id": "req-11.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21877,7 +21877,7 @@
                 ]
               },
               {
-                "uuid": "41b0fb95-2df4-44e0-9d32-0de8e646d5cf",
+                "uuid": "8a6fb9ec-d66d-472b-b048-d076dd02941a",
                 "control-id": "req-11.1.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21890,7 +21890,7 @@
                 ]
               },
               {
-                "uuid": "66eb05cc-47ca-4c95-8717-46606597909c",
+                "uuid": "813239a1-8a72-4f62-a7c1-a0e96c853e59",
                 "control-id": "req-11.2.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21903,7 +21903,7 @@
                 ]
               },
               {
-                "uuid": "ed10f6ab-0ba6-472f-9822-182a1af3f8b8",
+                "uuid": "02f2ec50-85e9-464f-ae2c-71968b0bf30b",
                 "control-id": "req-11.2.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21916,7 +21916,7 @@
                 ]
               },
               {
-                "uuid": "6b9dd005-f275-474d-bd51-b4c8e50a877f",
+                "uuid": "5710c3bc-625b-4692-b8ec-b75eff2e3abf",
                 "control-id": "req-11.2.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21929,7 +21929,7 @@
                 ]
               },
               {
-                "uuid": "1d050eb7-7d12-4a43-a63a-4adeae26f8c1",
+                "uuid": "00db918b-d72c-41e3-b476-88c0285b7cb5",
                 "control-id": "req-11.3.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21942,7 +21942,7 @@
                 ]
               },
               {
-                "uuid": "180dd32d-bc5c-4f17-b0d6-6a558791f7cb",
+                "uuid": "f60e74a2-c1bf-4e2f-98fa-b301da8120aa",
                 "control-id": "req-11.3.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21955,7 +21955,7 @@
                 ]
               },
               {
-                "uuid": "dcd5f118-3f01-4914-844a-38076bd145d3",
+                "uuid": "6ee6b908-1da7-48f8-9d09-b91ee77fab07",
                 "control-id": "req-11.3.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21968,7 +21968,7 @@
                 ]
               },
               {
-                "uuid": "833d6aa8-3528-48e8-8e6a-c8b07d09fbca",
+                "uuid": "d0021374-d6fb-48ba-ae8b-1bab26cd1ace",
                 "control-id": "req-11.3.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21981,7 +21981,7 @@
                 ]
               },
               {
-                "uuid": "6ec8dd04-91bf-46b9-9969-d7fd6c119d3e",
+                "uuid": "b6663274-9a6f-4ba4-ba9e-ea6220d23fd1",
                 "control-id": "req-11.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -21994,7 +21994,7 @@
                 ]
               },
               {
-                "uuid": "d08e7cd4-3bef-4189-9594-c3256ff34c0c",
+                "uuid": "e600fd14-6f71-4f71-801b-d34e6dfae390",
                 "control-id": "req-11.5.1",
                 "description": "While this is a control that's meant for the payment entity to set up a process\nto respond to alerts, OpenShift Container Platform's File Integrity Operator\nsupports alerts via that can be ingested by AlertManager.[1]\n\n[1] https://docs.openshift.com/container-platform/latest/monitoring/managing-alerts.html",
                 "props": [
@@ -22011,7 +22011,7 @@
                 ]
               },
               {
-                "uuid": "b6548fa6-bcad-47b7-ac72-cc488e8384bb",
+                "uuid": "e46d10a2-eefd-4879-8b3e-0bff20b33a4a",
                 "control-id": "req-11.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22024,7 +22024,7 @@
                 ]
               },
               {
-                "uuid": "d97b03ba-dda6-4928-83fc-c55f70e16162",
+                "uuid": "a4d5bd67-fad8-4218-a1f6-fe1ed45b64c5",
                 "control-id": "req-12.1.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22037,7 +22037,7 @@
                 ]
               },
               {
-                "uuid": "6d38b775-4bdd-48b1-981c-ea5ac1c80e62",
+                "uuid": "db19c6f1-b148-4b07-abc9-ed01f4bc73b2",
                 "control-id": "req-12.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22050,7 +22050,7 @@
                 ]
               },
               {
-                "uuid": "f3d7f083-fafa-4671-9751-d711d3af0b2d",
+                "uuid": "e1f71bf8-211b-4ecd-a6ea-6c4df5115f6c",
                 "control-id": "req-12.3.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22063,7 +22063,7 @@
                 ]
               },
               {
-                "uuid": "e23f65e6-5f8b-496c-b4c7-0f66121e02ca",
+                "uuid": "49f812b3-a27d-4ab2-8bb0-46595db2d0e0",
                 "control-id": "req-12.3.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22076,7 +22076,7 @@
                 ]
               },
               {
-                "uuid": "5dd02710-79e5-40e6-bcf1-461a77b75fba",
+                "uuid": "e1172eca-56a9-4f55-98dd-4e1619f507a3",
                 "control-id": "req-12.3.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22089,7 +22089,7 @@
                 ]
               },
               {
-                "uuid": "16b58e9b-2b8a-4c8c-94ca-6e51b89f89ae",
+                "uuid": "592dcc74-73a5-4168-82f3-d1e76ed721f0",
                 "control-id": "req-12.3.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22102,7 +22102,7 @@
                 ]
               },
               {
-                "uuid": "e650a720-173e-4479-ab25-b699ad4aaac3",
+                "uuid": "c812de3b-9e39-4de0-b46d-d96629f04e4f",
                 "control-id": "req-12.3.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22115,7 +22115,7 @@
                 ]
               },
               {
-                "uuid": "7d86cd6e-1a71-47d0-9c4c-20babcb445ee",
+                "uuid": "3ece1432-0c8b-4ab0-a4cc-a2e0435bb55c",
                 "control-id": "req-12.3.6",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22128,7 +22128,7 @@
                 ]
               },
               {
-                "uuid": "3caeb351-1605-433a-9485-3f0aafaea65a",
+                "uuid": "77dd65d2-e283-48ff-a494-1c87096585a2",
                 "control-id": "req-12.3.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22141,7 +22141,7 @@
                 ]
               },
               {
-                "uuid": "0a63ddf3-8080-416f-bf6e-54a71779d52f",
+                "uuid": "868dee74-ef56-4b02-97b3-c508bcf478ef",
                 "control-id": "req-12.3.8",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22154,7 +22154,7 @@
                 ]
               },
               {
-                "uuid": "64ced187-7a2a-4db3-a4a6-af3713e5a57a",
+                "uuid": "58cf4446-80c8-42af-bc8b-6eb7a4d1295a",
                 "control-id": "req-12.3.9",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22167,7 +22167,7 @@
                 ]
               },
               {
-                "uuid": "0e82398d-fd1f-4d46-bdde-def9de51824b",
+                "uuid": "031bee8c-95fd-4379-8e09-0686c5e22fb3",
                 "control-id": "req-12.3.10",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22180,7 +22180,7 @@
                 ]
               },
               {
-                "uuid": "41536dad-0d9b-4c8f-8a2e-8497f7fce04a",
+                "uuid": "64a7a8bc-5d5b-4658-a809-34348bcd1519",
                 "control-id": "req-12.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22193,7 +22193,7 @@
                 ]
               },
               {
-                "uuid": "c27112df-5571-4b28-abec-67dbe7aa420e",
+                "uuid": "05924ec3-f30a-4751-b4ed-de8ec6c5a68d",
                 "control-id": "req-12.5.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22206,7 +22206,7 @@
                 ]
               },
               {
-                "uuid": "d4599224-218e-49db-a119-a20ecab4641f",
+                "uuid": "b1228cd4-500d-4abf-b1ee-e468a813247f",
                 "control-id": "req-12.5.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22219,7 +22219,7 @@
                 ]
               },
               {
-                "uuid": "68516dc5-2903-4185-863c-67e3caf29c36",
+                "uuid": "f45f97dc-5e78-4f4d-bee3-4672b22ffe45",
                 "control-id": "req-12.5.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22232,7 +22232,7 @@
                 ]
               },
               {
-                "uuid": "3749da12-1de8-4861-888e-0364203f2d18",
+                "uuid": "888a6a1e-8a67-476b-80a0-27491a42acb2",
                 "control-id": "req-12.5.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22245,7 +22245,7 @@
                 ]
               },
               {
-                "uuid": "eb33c64e-6516-4b8b-ae8f-04b80fd5872d",
+                "uuid": "5952ba6d-ac27-436d-9c03-df4ba55af726",
                 "control-id": "req-12.5.5",
                 "description": "All accesses and operations to OpenShift objects are audited\naccordingly. Auditing cannot be turned off in the OpenShift\nContainer Platform.",
                 "props": [
@@ -22262,7 +22262,7 @@
                 ]
               },
               {
-                "uuid": "9e0803a7-dafe-409c-8a25-d0b53555b5e6",
+                "uuid": "514cccc9-4a08-4f9d-87bd-14eb84adb3f3",
                 "control-id": "req-12.6.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22275,7 +22275,7 @@
                 ]
               },
               {
-                "uuid": "6cde97e9-4d61-4ab1-9e40-24e0006d95df",
+                "uuid": "13d15303-7a48-46d2-a59c-76cebcccb9d3",
                 "control-id": "req-12.6.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22288,7 +22288,7 @@
                 ]
               },
               {
-                "uuid": "69e84b47-fa04-4fbe-a35e-ad8bbe92362f",
+                "uuid": "48ba9440-d3d9-4de5-8322-6368ca4c2dc4",
                 "control-id": "req-12.7",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22301,7 +22301,7 @@
                 ]
               },
               {
-                "uuid": "9205dab9-3af2-4ed8-a02f-3dfe5cd3f7ed",
+                "uuid": "64a4b218-c567-4cdf-9f20-629f64027d65",
                 "control-id": "req-12.8.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22314,7 +22314,7 @@
                 ]
               },
               {
-                "uuid": "f73b913c-b750-4d25-a887-6273f9e7b5cc",
+                "uuid": "c068f2da-a969-4826-a0ca-88a58a6b02d4",
                 "control-id": "req-12.8.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22327,7 +22327,7 @@
                 ]
               },
               {
-                "uuid": "6dbfd765-17c7-4ca2-bc0b-24fda48c39bd",
+                "uuid": "a43af885-8940-4300-a625-a3a0350a479f",
                 "control-id": "req-12.8.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22340,7 +22340,7 @@
                 ]
               },
               {
-                "uuid": "4720459d-94b9-4952-812d-8a1c14c34f06",
+                "uuid": "eb3ea7ab-5722-4652-981c-e1c807b565b3",
                 "control-id": "req-12.8.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22353,7 +22353,7 @@
                 ]
               },
               {
-                "uuid": "3f1d5bfb-32a9-428a-8722-d1c40b7decec",
+                "uuid": "09cc2c9d-6714-4df2-9ef9-cf071ec27f61",
                 "control-id": "req-12.8.5",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22366,7 +22366,7 @@
                 ]
               },
               {
-                "uuid": "fa2837cf-03c8-4ef4-8a8d-85d3e155a0d6",
+                "uuid": "382f1654-8642-47cb-8e2c-e7627b3e8906",
                 "control-id": "req-12.9",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22379,7 +22379,7 @@
                 ]
               },
               {
-                "uuid": "08689077-c3f9-407b-a798-843b1437f267",
+                "uuid": "f3d147b9-d6fe-4c30-8831-b1b29f3b70d1",
                 "control-id": "req-12.10.1",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22392,7 +22392,7 @@
                 ]
               },
               {
-                "uuid": "dc3ee985-de22-433b-af2e-df943772ee5f",
+                "uuid": "9995ef2b-f7c1-42a8-b051-6e3673df4aab",
                 "control-id": "req-12.10.2",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22405,7 +22405,7 @@
                 ]
               },
               {
-                "uuid": "f0351f02-b53f-4741-8a05-ef9b0d44881d",
+                "uuid": "d85a4124-418f-49d9-83bc-751a2b88715b",
                 "control-id": "req-12.10.3",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22418,7 +22418,7 @@
                 ]
               },
               {
-                "uuid": "bb25cae5-d0fa-46fa-b8d6-2af421bfbb5b",
+                "uuid": "e8b786e5-baee-4427-bbf4-a83194448b18",
                 "control-id": "req-12.10.4",
                 "description": "REPLACE_ME",
                 "props": [
@@ -22431,7 +22431,7 @@
                 ]
               },
               {
-                "uuid": "bcd2b0f5-c213-4745-9b30-f12f5857d566",
+                "uuid": "7a2f80d9-5b58-4a8a-8169-4802a9c76b28",
                 "control-id": "req-12.10.5",
                 "description": "This is a requirement for the incident response program, and its the responsibility of the\npayment entity to include such information. However, the OpenShift Container Platform\ndoes come with a monitoring stack that allows for transforming metrics into relevant\nalerts [1]\nOpenShift Container Platform's File Integrity Operator supports alerts via AlertManager\n[1] https://docs.openshift.com/container-platform/4.9/monitoring/managing-alerts.html",
                 "props": [
@@ -22448,7 +22448,7 @@
                 ]
               },
               {
-                "uuid": "3afababd-0671-4ec6-801f-3ed741fb9f94",
+                "uuid": "bbb33890-5785-4e4e-b24a-b99eaadbc29b",
                 "control-id": "req-12.10.6",
                 "description": "REPLACE_ME",
                 "props": [
